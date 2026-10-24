@@ -21,3 +21,9 @@ __pycache__/
 venv/
 checkpoints/
 raw-data/
+release_plan.private.json
+runtime-private/
+WATCHDOG_ARMED.json
+SAVED.json
+DELETE_REQUESTED.json
+RELEASED.json
