@@ -1,0 +1,1186 @@
+[
+  {
+    "task": "scan_object",
+    "original_episode": 0,
+    "filtered_episode": 0,
+    "frames": 163,
+    "instructions": [
+      "With the right arm, pick the barcode scanner, then grab the cube tea box with embossed designs with the left arm, and scan the cube tea box with embossed designs."
+    ],
+    "named_arm_sequence": [
+      "right",
+      "left"
+    ],
+    "state_events": [
+      {
+        "frame": 59,
+        "arm": "left",
+        "event": "closed"
+      },
+      {
+        "frame": 59,
+        "arm": "right",
+        "event": "closed"
+      }
+    ],
+    "action_events": [
+      {
+        "frame": 58,
+        "arm": "left",
+        "event": "closed"
+      },
+      {
+        "frame": 58,
+        "arm": "right",
+        "event": "closed"
+      }
+    ],
+    "strict_state_events": [
+      {
+        "frame": 61,
+        "arm": "left",
+        "event": "closed"
+      },
+      {
+        "frame": 61,
+        "arm": "right",
+        "event": "closed"
+      }
+    ],
+    "initial_grip": [
+      1.0,
+      1.0
+    ],
+    "final_grip": [
+      0.0,
+      0.0
+    ],
+    "expected_events": [
+      [
+        "left",
+        "closed"
+      ],
+      [
+        "right",
+        "closed"
+      ]
+    ],
+    "state_matches": true,
+    "action_matches": true,
+    "strict_threshold_matches": true,
+    "decision": "retain",
+    "confidence_scope": "仅手臂角色和夹爪事件模式，不证明物体身份、空间目标或任务成功。",
+    "event_frame_offsets_action_minus_state": [
+      -1,
+      -1
+    ],
+    "rule": "双臂同步抓取并抬起；之后先单独调整物体臂，再调整扫描器臂。角色顺序由源码推断。",
+    "flags": [
+      "soft_temporal_wording_vs_parallel_grasp"
+    ],
+    "scanner_arm_named": "right",
+    "object_arm_named": "left",
+    "motion_role_checks": [
+      {
+        "array": "state",
+        "threshold_rad": 1e-06,
+        "role_sequence": [
+          "left",
+          "right"
+        ],
+        "matches": true,
+        "segments": [
+          {
+            "arm": "left",
+            "start": 88,
+            "end": 119,
+            "length": 31
+          },
+          {
+            "arm": "left",
+            "start": 122,
+            "end": 128,
+            "length": 6
+          },
+          {
+            "arm": "right",
+            "start": 129,
+            "end": 155,
+            "length": 26
+          },
+          {
+            "arm": "right",
+            "start": 157,
+            "end": 162,
+            "length": 5
+          }
+        ]
+      },
+      {
+        "array": "state",
+        "threshold_rad": 1e-05,
+        "role_sequence": [
+          "left",
+          "right"
+        ],
+        "matches": true,
+        "segments": [
+          {
+            "arm": "left",
+            "start": 88,
+            "end": 119,
+            "length": 31
+          },
+          {
+            "arm": "left",
+            "start": 122,
+            "end": 128,
+            "length": 6
+          },
+          {
+            "arm": "right",
+            "start": 129,
+            "end": 155,
+            "length": 26
+          },
+          {
+            "arm": "right",
+            "start": 157,
+            "end": 162,
+            "length": 5
+          }
+        ]
+      },
+      {
+        "array": "state",
+        "threshold_rad": 0.0001,
+        "role_sequence": [
+          "left",
+          "right"
+        ],
+        "matches": true,
+        "segments": [
+          {
+            "arm": "left",
+            "start": 88,
+            "end": 119,
+            "length": 31
+          },
+          {
+            "arm": "left",
+            "start": 122,
+            "end": 128,
+            "length": 6
+          },
+          {
+            "arm": "right",
+            "start": 129,
+            "end": 155,
+            "length": 26
+          },
+          {
+            "arm": "right",
+            "start": 157,
+            "end": 162,
+            "length": 5
+          }
+        ]
+      },
+      {
+        "array": "action",
+        "threshold_rad": 1e-06,
+        "role_sequence": [
+          "left",
+          "right"
+        ],
+        "matches": true,
+        "segments": [
+          {
+            "arm": "left",
+            "start": 87,
+            "end": 118,
+            "length": 31
+          },
+          {
+            "arm": "left",
+            "start": 121,
+            "end": 127,
+            "length": 6
+          },
+          {
+            "arm": "right",
+            "start": 128,
+            "end": 154,
+            "length": 26
+          },
+          {
+            "arm": "right",
+            "start": 156,
+            "end": 162,
+            "length": 6
+          }
+        ]
+      },
+      {
+        "array": "action",
+        "threshold_rad": 1e-05,
+        "role_sequence": [
+          "left",
+          "right"
+        ],
+        "matches": true,
+        "segments": [
+          {
+            "arm": "left",
+            "start": 87,
+            "end": 118,
+            "length": 31
+          },
+          {
+            "arm": "left",
+            "start": 121,
+            "end": 127,
+            "length": 6
+          },
+          {
+            "arm": "right",
+            "start": 128,
+            "end": 154,
+            "length": 26
+          },
+          {
+            "arm": "right",
+            "start": 156,
+            "end": 162,
+            "length": 6
+          }
+        ]
+      },
+      {
+        "array": "action",
+        "threshold_rad": 0.0001,
+        "role_sequence": [
+          "left",
+          "right"
+        ],
+        "matches": true,
+        "segments": [
+          {
+            "arm": "left",
+            "start": 87,
+            "end": 118,
+            "length": 31
+          },
+          {
+            "arm": "left",
+            "start": 121,
+            "end": 127,
+            "length": 6
+          },
+          {
+            "arm": "right",
+            "start": 128,
+            "end": 154,
+            "length": 26
+          },
+          {
+            "arm": "right",
+            "start": 156,
+            "end": 162,
+            "length": 6
+          }
+        ]
+      }
+    ],
+    "source_file": "official_sources/scan_object.py",
+    "source_url": "https://github.com/RoboTwin-Platform/RoboTwin/blob/main/envs/scan_object.py"
+  },
+  {
+    "task": "scan_object",
+    "original_episode": 16,
+    "filtered_episode": 16,
+    "frames": 163,
+    "instructions": [
+      "Using the right arm, pick the yellow and black code scanner, then use the left arm to grab the tea box with beige edges and scan it."
+    ],
+    "named_arm_sequence": [
+      "right",
+      "left"
+    ],
+    "state_events": [
+      {
+        "frame": 61,
+        "arm": "left",
+        "event": "closed"
+      },
+      {
+        "frame": 61,
+        "arm": "right",
+        "event": "closed"
+      }
+    ],
+    "action_events": [
+      {
+        "frame": 60,
+        "arm": "left",
+        "event": "closed"
+      },
+      {
+        "frame": 60,
+        "arm": "right",
+        "event": "closed"
+      }
+    ],
+    "strict_state_events": [
+      {
+        "frame": 63,
+        "arm": "left",
+        "event": "closed"
+      },
+      {
+        "frame": 63,
+        "arm": "right",
+        "event": "closed"
+      }
+    ],
+    "initial_grip": [
+      1.0,
+      1.0
+    ],
+    "final_grip": [
+      0.0,
+      0.0
+    ],
+    "expected_events": [
+      [
+        "left",
+        "closed"
+      ],
+      [
+        "right",
+        "closed"
+      ]
+    ],
+    "state_matches": true,
+    "action_matches": true,
+    "strict_threshold_matches": true,
+    "decision": "retain",
+    "confidence_scope": "仅手臂角色和夹爪事件模式，不证明物体身份、空间目标或任务成功。",
+    "event_frame_offsets_action_minus_state": [
+      -1,
+      -1
+    ],
+    "rule": "双臂同步抓取并抬起；之后先单独调整物体臂，再调整扫描器臂。角色顺序由源码推断。",
+    "flags": [
+      "soft_temporal_wording_vs_parallel_grasp"
+    ],
+    "scanner_arm_named": "right",
+    "object_arm_named": "left",
+    "motion_role_checks": [
+      {
+        "array": "state",
+        "threshold_rad": 1e-06,
+        "role_sequence": [
+          "left",
+          "right"
+        ],
+        "matches": true,
+        "segments": [
+          {
+            "arm": "left",
+            "start": 92,
+            "end": 123,
+            "length": 31
+          },
+          {
+            "arm": "left",
+            "start": 126,
+            "end": 132,
+            "length": 6
+          },
+          {
+            "arm": "right",
+            "start": 133,
+            "end": 155,
+            "length": 22
+          },
+          {
+            "arm": "right",
+            "start": 157,
+            "end": 162,
+            "length": 5
+          }
+        ]
+      },
+      {
+        "array": "state",
+        "threshold_rad": 1e-05,
+        "role_sequence": [
+          "left",
+          "right"
+        ],
+        "matches": true,
+        "segments": [
+          {
+            "arm": "left",
+            "start": 92,
+            "end": 123,
+            "length": 31
+          },
+          {
+            "arm": "left",
+            "start": 126,
+            "end": 132,
+            "length": 6
+          },
+          {
+            "arm": "right",
+            "start": 133,
+            "end": 155,
+            "length": 22
+          },
+          {
+            "arm": "right",
+            "start": 157,
+            "end": 162,
+            "length": 5
+          }
+        ]
+      },
+      {
+        "array": "state",
+        "threshold_rad": 0.0001,
+        "role_sequence": [
+          "left",
+          "right"
+        ],
+        "matches": true,
+        "segments": [
+          {
+            "arm": "left",
+            "start": 92,
+            "end": 123,
+            "length": 31
+          },
+          {
+            "arm": "left",
+            "start": 126,
+            "end": 132,
+            "length": 6
+          },
+          {
+            "arm": "right",
+            "start": 133,
+            "end": 155,
+            "length": 22
+          },
+          {
+            "arm": "right",
+            "start": 157,
+            "end": 162,
+            "length": 5
+          }
+        ]
+      },
+      {
+        "array": "action",
+        "threshold_rad": 1e-06,
+        "role_sequence": [
+          "left",
+          "right"
+        ],
+        "matches": true,
+        "segments": [
+          {
+            "arm": "left",
+            "start": 91,
+            "end": 122,
+            "length": 31
+          },
+          {
+            "arm": "left",
+            "start": 125,
+            "end": 131,
+            "length": 6
+          },
+          {
+            "arm": "right",
+            "start": 132,
+            "end": 154,
+            "length": 22
+          },
+          {
+            "arm": "right",
+            "start": 156,
+            "end": 161,
+            "length": 5
+          }
+        ]
+      },
+      {
+        "array": "action",
+        "threshold_rad": 1e-05,
+        "role_sequence": [
+          "left",
+          "right"
+        ],
+        "matches": true,
+        "segments": [
+          {
+            "arm": "left",
+            "start": 91,
+            "end": 122,
+            "length": 31
+          },
+          {
+            "arm": "left",
+            "start": 125,
+            "end": 131,
+            "length": 6
+          },
+          {
+            "arm": "right",
+            "start": 132,
+            "end": 154,
+            "length": 22
+          },
+          {
+            "arm": "right",
+            "start": 156,
+            "end": 161,
+            "length": 5
+          }
+        ]
+      },
+      {
+        "array": "action",
+        "threshold_rad": 0.0001,
+        "role_sequence": [
+          "left",
+          "right"
+        ],
+        "matches": true,
+        "segments": [
+          {
+            "arm": "left",
+            "start": 91,
+            "end": 122,
+            "length": 31
+          },
+          {
+            "arm": "left",
+            "start": 125,
+            "end": 131,
+            "length": 6
+          },
+          {
+            "arm": "right",
+            "start": 132,
+            "end": 154,
+            "length": 22
+          },
+          {
+            "arm": "right",
+            "start": 156,
+            "end": 161,
+            "length": 5
+          }
+        ]
+      }
+    ],
+    "source_file": "official_sources/scan_object.py",
+    "source_url": "https://github.com/RoboTwin-Platform/RoboTwin/blob/main/envs/scan_object.py"
+  },
+  {
+    "task": "scan_object",
+    "original_episode": 31,
+    "filtered_episode": 31,
+    "frames": 163,
+    "instructions": [
+      "Use the right arm to take the barcode scanner with flat top, then grab the yellow tea box with the left arm, and scan it."
+    ],
+    "named_arm_sequence": [
+      "right",
+      "left"
+    ],
+    "state_events": [
+      {
+        "frame": 59,
+        "arm": "left",
+        "event": "closed"
+      },
+      {
+        "frame": 59,
+        "arm": "right",
+        "event": "closed"
+      }
+    ],
+    "action_events": [
+      {
+        "frame": 58,
+        "arm": "left",
+        "event": "closed"
+      },
+      {
+        "frame": 58,
+        "arm": "right",
+        "event": "closed"
+      }
+    ],
+    "strict_state_events": [
+      {
+        "frame": 61,
+        "arm": "left",
+        "event": "closed"
+      },
+      {
+        "frame": 61,
+        "arm": "right",
+        "event": "closed"
+      }
+    ],
+    "initial_grip": [
+      1.0,
+      1.0
+    ],
+    "final_grip": [
+      0.0,
+      0.0
+    ],
+    "expected_events": [
+      [
+        "left",
+        "closed"
+      ],
+      [
+        "right",
+        "closed"
+      ]
+    ],
+    "state_matches": true,
+    "action_matches": true,
+    "strict_threshold_matches": true,
+    "decision": "retain",
+    "confidence_scope": "仅手臂角色和夹爪事件模式，不证明物体身份、空间目标或任务成功。",
+    "event_frame_offsets_action_minus_state": [
+      -1,
+      -1
+    ],
+    "rule": "双臂同步抓取并抬起；之后先单独调整物体臂，再调整扫描器臂。角色顺序由源码推断。",
+    "flags": [
+      "soft_temporal_wording_vs_parallel_grasp"
+    ],
+    "scanner_arm_named": "right",
+    "object_arm_named": "left",
+    "motion_role_checks": [
+      {
+        "array": "state",
+        "threshold_rad": 1e-06,
+        "role_sequence": [
+          "left",
+          "right"
+        ],
+        "matches": true,
+        "segments": [
+          {
+            "arm": "left",
+            "start": 89,
+            "end": 119,
+            "length": 30
+          },
+          {
+            "arm": "left",
+            "start": 122,
+            "end": 128,
+            "length": 6
+          },
+          {
+            "arm": "right",
+            "start": 129,
+            "end": 155,
+            "length": 26
+          },
+          {
+            "arm": "right",
+            "start": 157,
+            "end": 162,
+            "length": 5
+          }
+        ]
+      },
+      {
+        "array": "state",
+        "threshold_rad": 1e-05,
+        "role_sequence": [
+          "left",
+          "right"
+        ],
+        "matches": true,
+        "segments": [
+          {
+            "arm": "left",
+            "start": 89,
+            "end": 119,
+            "length": 30
+          },
+          {
+            "arm": "left",
+            "start": 122,
+            "end": 128,
+            "length": 6
+          },
+          {
+            "arm": "right",
+            "start": 129,
+            "end": 155,
+            "length": 26
+          },
+          {
+            "arm": "right",
+            "start": 157,
+            "end": 162,
+            "length": 5
+          }
+        ]
+      },
+      {
+        "array": "state",
+        "threshold_rad": 0.0001,
+        "role_sequence": [
+          "left",
+          "right"
+        ],
+        "matches": true,
+        "segments": [
+          {
+            "arm": "left",
+            "start": 89,
+            "end": 119,
+            "length": 30
+          },
+          {
+            "arm": "left",
+            "start": 122,
+            "end": 128,
+            "length": 6
+          },
+          {
+            "arm": "right",
+            "start": 129,
+            "end": 155,
+            "length": 26
+          },
+          {
+            "arm": "right",
+            "start": 157,
+            "end": 162,
+            "length": 5
+          }
+        ]
+      },
+      {
+        "array": "action",
+        "threshold_rad": 1e-06,
+        "role_sequence": [
+          "left",
+          "right"
+        ],
+        "matches": true,
+        "segments": [
+          {
+            "arm": "left",
+            "start": 88,
+            "end": 118,
+            "length": 30
+          },
+          {
+            "arm": "left",
+            "start": 121,
+            "end": 127,
+            "length": 6
+          },
+          {
+            "arm": "right",
+            "start": 128,
+            "end": 154,
+            "length": 26
+          },
+          {
+            "arm": "right",
+            "start": 156,
+            "end": 162,
+            "length": 6
+          }
+        ]
+      },
+      {
+        "array": "action",
+        "threshold_rad": 1e-05,
+        "role_sequence": [
+          "left",
+          "right"
+        ],
+        "matches": true,
+        "segments": [
+          {
+            "arm": "left",
+            "start": 88,
+            "end": 118,
+            "length": 30
+          },
+          {
+            "arm": "left",
+            "start": 121,
+            "end": 127,
+            "length": 6
+          },
+          {
+            "arm": "right",
+            "start": 128,
+            "end": 154,
+            "length": 26
+          },
+          {
+            "arm": "right",
+            "start": 156,
+            "end": 162,
+            "length": 6
+          }
+        ]
+      },
+      {
+        "array": "action",
+        "threshold_rad": 0.0001,
+        "role_sequence": [
+          "left",
+          "right"
+        ],
+        "matches": true,
+        "segments": [
+          {
+            "arm": "left",
+            "start": 88,
+            "end": 118,
+            "length": 30
+          },
+          {
+            "arm": "left",
+            "start": 121,
+            "end": 127,
+            "length": 6
+          },
+          {
+            "arm": "right",
+            "start": 128,
+            "end": 154,
+            "length": 26
+          },
+          {
+            "arm": "right",
+            "start": 156,
+            "end": 162,
+            "length": 6
+          }
+        ]
+      }
+    ],
+    "source_file": "official_sources/scan_object.py",
+    "source_url": "https://github.com/RoboTwin-Platform/RoboTwin/blob/main/envs/scan_object.py"
+  },
+  {
+    "task": "scan_object",
+    "original_episode": 32,
+    "filtered_episode": 32,
+    "frames": 167,
+    "instructions": [
+      "With the left arm, pick the handheld scanner, then grab the tea box with printed leaves with the right arm, and scan the tea box with printed leaves."
+    ],
+    "named_arm_sequence": [
+      "left",
+      "right"
+    ],
+    "state_events": [
+      {
+        "frame": 62,
+        "arm": "left",
+        "event": "closed"
+      },
+      {
+        "frame": 62,
+        "arm": "right",
+        "event": "closed"
+      }
+    ],
+    "action_events": [
+      {
+        "frame": 61,
+        "arm": "left",
+        "event": "closed"
+      },
+      {
+        "frame": 61,
+        "arm": "right",
+        "event": "closed"
+      }
+    ],
+    "strict_state_events": [
+      {
+        "frame": 64,
+        "arm": "left",
+        "event": "closed"
+      },
+      {
+        "frame": 64,
+        "arm": "right",
+        "event": "closed"
+      }
+    ],
+    "initial_grip": [
+      1.0,
+      1.0
+    ],
+    "final_grip": [
+      0.0,
+      0.0
+    ],
+    "expected_events": [
+      [
+        "left",
+        "closed"
+      ],
+      [
+        "right",
+        "closed"
+      ]
+    ],
+    "state_matches": true,
+    "action_matches": true,
+    "strict_threshold_matches": true,
+    "decision": "retain",
+    "confidence_scope": "仅手臂角色和夹爪事件模式，不证明物体身份、空间目标或任务成功。",
+    "event_frame_offsets_action_minus_state": [
+      -1,
+      -1
+    ],
+    "rule": "双臂同步抓取并抬起；之后先单独调整物体臂，再调整扫描器臂。角色顺序由源码推断。",
+    "flags": [
+      "soft_temporal_wording_vs_parallel_grasp"
+    ],
+    "scanner_arm_named": "left",
+    "object_arm_named": "right",
+    "motion_role_checks": [
+      {
+        "array": "state",
+        "threshold_rad": 1e-06,
+        "role_sequence": [
+          "right",
+          "left"
+        ],
+        "matches": true,
+        "segments": [
+          {
+            "arm": "right",
+            "start": 91,
+            "end": 123,
+            "length": 32
+          },
+          {
+            "arm": "right",
+            "start": 126,
+            "end": 132,
+            "length": 6
+          },
+          {
+            "arm": "left",
+            "start": 133,
+            "end": 159,
+            "length": 26
+          },
+          {
+            "arm": "left",
+            "start": 161,
+            "end": 166,
+            "length": 5
+          }
+        ]
+      },
+      {
+        "array": "state",
+        "threshold_rad": 1e-05,
+        "role_sequence": [
+          "right",
+          "left"
+        ],
+        "matches": true,
+        "segments": [
+          {
+            "arm": "right",
+            "start": 91,
+            "end": 123,
+            "length": 32
+          },
+          {
+            "arm": "right",
+            "start": 126,
+            "end": 132,
+            "length": 6
+          },
+          {
+            "arm": "left",
+            "start": 133,
+            "end": 159,
+            "length": 26
+          },
+          {
+            "arm": "left",
+            "start": 161,
+            "end": 166,
+            "length": 5
+          }
+        ]
+      },
+      {
+        "array": "state",
+        "threshold_rad": 0.0001,
+        "role_sequence": [
+          "right",
+          "left"
+        ],
+        "matches": true,
+        "segments": [
+          {
+            "arm": "right",
+            "start": 91,
+            "end": 123,
+            "length": 32
+          },
+          {
+            "arm": "right",
+            "start": 126,
+            "end": 132,
+            "length": 6
+          },
+          {
+            "arm": "left",
+            "start": 133,
+            "end": 159,
+            "length": 26
+          },
+          {
+            "arm": "left",
+            "start": 161,
+            "end": 166,
+            "length": 5
+          }
+        ]
+      },
+      {
+        "array": "action",
+        "threshold_rad": 1e-06,
+        "role_sequence": [
+          "right",
+          "left"
+        ],
+        "matches": true,
+        "segments": [
+          {
+            "arm": "right",
+            "start": 90,
+            "end": 122,
+            "length": 32
+          },
+          {
+            "arm": "right",
+            "start": 125,
+            "end": 131,
+            "length": 6
+          },
+          {
+            "arm": "left",
+            "start": 132,
+            "end": 158,
+            "length": 26
+          },
+          {
+            "arm": "left",
+            "start": 160,
+            "end": 166,
+            "length": 6
+          }
+        ]
+      },
+      {
+        "array": "action",
+        "threshold_rad": 1e-05,
+        "role_sequence": [
+          "right",
+          "left"
+        ],
+        "matches": true,
+        "segments": [
+          {
+            "arm": "right",
+            "start": 90,
+            "end": 122,
+            "length": 32
+          },
+          {
+            "arm": "right",
+            "start": 125,
+            "end": 131,
+            "length": 6
+          },
+          {
+            "arm": "left",
+            "start": 132,
+            "end": 158,
+            "length": 26
+          },
+          {
+            "arm": "left",
+            "start": 160,
+            "end": 166,
+            "length": 6
+          }
+        ]
+      },
+      {
+        "array": "action",
+        "threshold_rad": 0.0001,
+        "role_sequence": [
+          "right",
+          "left"
+        ],
+        "matches": true,
+        "segments": [
+          {
+            "arm": "right",
+            "start": 90,
+            "end": 122,
+            "length": 32
+          },
+          {
+            "arm": "right",
+            "start": 125,
+            "end": 131,
+            "length": 6
+          },
+          {
+            "arm": "left",
+            "start": 132,
+            "end": 158,
+            "length": 26
+          },
+          {
+            "arm": "left",
+            "start": 160,
+            "end": 165,
+            "length": 5
+          }
+        ]
+      }
+    ],
+    "source_file": "official_sources/scan_object.py",
+    "source_url": "https://github.com/RoboTwin-Platform/RoboTwin/blob/main/envs/scan_object.py"
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "episodes_checked": 2479,
+  "frames_checked": 544167,
+  "tasks": 50,
+  "prior_review_checked": 33,
+  "hard_error_episodes": 0,
+  "additional_exclusions": 0,
+  "original_2500_duplicate_groups": 0,
+  "best_lag_counts": {
+    "1": 2479
+  },
+  "review_flag_counts": {
+    "duration_outlier_review": 88,
+    "joint_step_above_0.2_rad_review": 13,
+    "static_run_at_least_1s_review": 306
+  },
+  "flagged_episodes": 382,
+  "prior_review_flagged": 11,
+  "maximum_static_run_seconds": 1.9333333333333333,
+  "maximum_joint_step": 0.40082526206970215,
+  "new_cloud_credits_used": 0,
+  "caveat": "Numerical and metadata review only; videos not present locally. Review flags are not rejection labels.",
+  "priority_video_review_episodes": 10,
+  "continuous_high_step_episodes": 3,
+  "retained_episodes": 2479,
+  "gripper_observed_range": [
+    0,
+    1
+  ],
+  "lag1_joint_rms_max": 0.0
+}

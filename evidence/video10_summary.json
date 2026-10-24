@@ -1,0 +1,15 @@
+{
+  "completed_at": "2026-10-24T11:52:16.638182+08:00",
+  "instance_state": "no_running_instance_verified_in_ui",
+  "training_started": false,
+  "credits_budget_reserved": 1,
+  "credits_final_billed": null,
+  "authorized_total_budget": 32,
+  "remaining_budget_reserved_basis": 31,
+  "final_episodes": 2478,
+  "final_frames": 543987,
+  "tasks": 50,
+  "review_retained": 9,
+  "review_excluded": 1,
+  "archive_sha256": "abfe32684566c387b0bb2f98884f47c5a5986b4d64eaa5f1ba13b7b15e754bdd"
+}

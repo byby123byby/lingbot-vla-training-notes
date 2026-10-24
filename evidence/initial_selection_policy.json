@@ -1,0 +1,9 @@
+{
+  "version": "conservative_v1",
+  "data": "official Aloha-AgileX clean 50 tasks x 50 episodes",
+  "hard_exclusion": "invalid state/action/index/timestamp/metadata or sampled camera decoding failure",
+  "statistical_exclusion": "within each task, log-metric robust Z > 4.5 for action jerk RMS, state jerk RMS and peak joint velocity, AND action jerk RMS > 3 times task median",
+  "derivatives": "finite differences at metadata fps; joints 0:6 and 7:13, grippers excluded; no environment calls",
+  "robust_z": "0.67448975 * (log(value) - median(log(values))) / MAD(log(values)); zero if MAD <= 1e-12",
+  "limitation": "heuristic experimental filtering; improvement in task success is not yet established; camera checks sample 3 frames per camera per episode"
+}

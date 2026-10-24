@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-24",
+  "episodes_checked": 122,
+  "task_counts": {
+    "blocks_ranking_rgb": 31,
+    "blocks_ranking_size": 14,
+    "handover_block": 11,
+    "handover_mic": 3,
+    "hanging_mug": 6,
+    "place_object_basket": 6,
+    "scan_object": 12,
+    "stack_blocks_three": 23,
+    "stack_blocks_two": 10,
+    "stack_bowls_two": 6
+  },
+  "arm_role_pattern_matches": 122,
+  "state_action_and_strict_threshold_event_matches": 122,
+  "scan_motion_role_matches": 12,
+  "soft_temporal_wording_flags": 4,
+  "new_exclusions": 0,
+  "current_kept_episodes": 2455,
+  "current_kept_frames": 540182,
+  "current_tasks": 50,
+  "total_excluded": 45,
+  "selection_changed": false,
+  "new_cloud_credits": 0,
+  "instance_started": false,
+  "limitations": [
+    "本轮为本机状态/动作/指令核对，未新增观看122条视频。",
+    "上游main源码已保存哈希；未确认与数据生成时的云端代码逐字一致，角色解释属于条件推断。",
+    "夹爪闭合不证明抓到了正确物体；不验证颜色、物体型号、落点或模拟器success。",
+    "4条then措辞与同步抓取不严格一致，保留原始标签并列入软问题清单；未自动改写。",
+    "此前21条统计剔除、23条面包语义剔除以及云端loader/norm_stats待验证的限制仍然适用。"
+  ]
+}

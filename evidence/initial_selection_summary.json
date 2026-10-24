@@ -1,0 +1,10 @@
+{
+  "total_episodes": 2500,
+  "kept": 2479,
+  "excluded": 21,
+  "review_only_kept": 33,
+  "total_frames": 549787,
+  "kept_frames": 544167,
+  "tasks": 50,
+  "minimum_episodes_per_task": 44
+}

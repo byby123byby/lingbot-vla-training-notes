@@ -1,0 +1,646 @@
+[
+  {
+    "task": "adjust_bottle",
+    "episode": 16,
+    "decision": "retain",
+    "observations": "左臂抓住绿色瓶，f96起抬离桌面，f120–150连续旋转调整，末段仍持握。峰值f135附近三视角连续，无可见滑落；左腕被近处瓶身遮挡，非解码故障。",
+    "frames": 173,
+    "peak_frame": 135,
+    "instructions": [
+      "Grab the medium green bottle with capped neck and lift it with the left arm"
+    ],
+    "review_method": "主相机每3帧全程抽帧（5 fps，含末帧）+峰值附近16帧三相机逐帧；7条摇瓶另补每6帧活动腕视角。",
+    "video": "video_review_remaining33_20261024/adjust_bottle_ep16.mp4",
+    "evidence": [
+      "video_review_remaining33_20261024/adjust_bottle_ep16_overview_0.jpg",
+      "video_review_remaining33_20261024/adjust_bottle_ep16_overview_1.jpg",
+      "video_review_remaining33_20261024/adjust_bottle_ep16_peak_0.jpg",
+      "video_review_remaining33_20261024/adjust_bottle_ep16_peak_1.jpg"
+    ]
+  },
+  {
+    "task": "adjust_bottle",
+    "episode": 20,
+    "decision": "retain",
+    "observations": "右臂接近抓住瓶身，f81后抬起，f99–111转为瓶口朝上，随后移出主视角边缘。峰值f16是接近阶段，三视角连续，未见物体跳变。末段主视角不可见全部瓶身，不据此宣称环境成功。",
+    "frames": 135,
+    "peak_frame": 16,
+    "instructions": [
+      "Find the narrow-necked bottle on the table and raise it using the right arm."
+    ],
+    "review_method": "主相机每3帧全程抽帧（5 fps，含末帧）+峰值附近16帧三相机逐帧；7条摇瓶另补每6帧活动腕视角。",
+    "video": "video_review_remaining33_20261024/adjust_bottle_ep20.mp4",
+    "evidence": [
+      "video_review_remaining33_20261024/adjust_bottle_ep20_overview_0.jpg",
+      "video_review_remaining33_20261024/adjust_bottle_ep20_overview_1.jpg",
+      "video_review_remaining33_20261024/adjust_bottle_ep20_peak_0.jpg",
+      "video_review_remaining33_20261024/adjust_bottle_ep20_peak_1.jpg"
+    ]
+  },
+  {
+    "task": "adjust_bottle",
+    "episode": 25,
+    "decision": "retain",
+    "observations": "右臂抓住瓶身，f75后上举，f99–111调整为瓶口朝上，再移向右侧视野外。峰值f14在接近阶段，无可见物体跳变。未见脱手，末段主视角覆盖有限。",
+    "frames": 133,
+    "peak_frame": 14,
+    "instructions": [
+      "Use the right arm to pick up the bottle with ridges on bottom in the correct orientation"
+    ],
+    "review_method": "主相机每3帧全程抽帧（5 fps，含末帧）+峰值附近16帧三相机逐帧；7条摇瓶另补每6帧活动腕视角。",
+    "video": "video_review_remaining33_20261024/adjust_bottle_ep25.mp4",
+    "evidence": [
+      "video_review_remaining33_20261024/adjust_bottle_ep25_overview_0.jpg",
+      "video_review_remaining33_20261024/adjust_bottle_ep25_overview_1.jpg",
+      "video_review_remaining33_20261024/adjust_bottle_ep25_peak_0.jpg",
+      "video_review_remaining33_20261024/adjust_bottle_ep25_peak_1.jpg"
+    ]
+  },
+  {
+    "task": "beat_block_hammer",
+    "episode": 26,
+    "decision": "retain",
+    "observations": "左臂接近并夹住黑黄锤柄，f78后提起锤，f90–99移向红块并接触，红块有位移。峰值f15属接近阶段，三视角连续。未见脱手；接触力度和成功标志未验证。",
+    "frames": 110,
+    "peak_frame": 15,
+    "instructions": [
+      "With the left arm, grab the black and yellow hammer grip and beat the block."
+    ],
+    "review_method": "主相机每3帧全程抽帧（5 fps，含末帧）+峰值附近16帧三相机逐帧；7条摇瓶另补每6帧活动腕视角。",
+    "video": "video_review_remaining33_20261024/beat_block_hammer_ep26.mp4",
+    "evidence": [
+      "video_review_remaining33_20261024/beat_block_hammer_ep26_overview_0.jpg",
+      "video_review_remaining33_20261024/beat_block_hammer_ep26_peak_0.jpg",
+      "video_review_remaining33_20261024/beat_block_hammer_ep26_peak_1.jpg"
+    ]
+  },
+  {
+    "task": "blocks_ranking_size",
+    "episode": 28,
+    "decision": "retain",
+    "observations": "先小紫块、再中青块、最后大粉块搬到中央，末帧464大中小从左到右排列。f321峰值对应左臂撤离和右臂接近，三视角无跳变。长轨迹包含完整三次搬运。",
+    "frames": 465,
+    "peak_frame": 321,
+    "instructions": [
+      "Shift large block, medium block, and small block to the table's center and sort by size."
+    ],
+    "review_method": "主相机每3帧全程抽帧（5 fps，含末帧）+峰值附近16帧三相机逐帧；7条摇瓶另补每6帧活动腕视角。",
+    "video": "video_review_remaining33_20261024/blocks_ranking_size_ep28.mp4",
+    "evidence": [
+      "video_review_remaining33_20261024/blocks_ranking_size_ep28_overview_0.jpg",
+      "video_review_remaining33_20261024/blocks_ranking_size_ep28_overview_1.jpg",
+      "video_review_remaining33_20261024/blocks_ranking_size_ep28_overview_2.jpg",
+      "video_review_remaining33_20261024/blocks_ranking_size_ep28_overview_3.jpg",
+      "video_review_remaining33_20261024/blocks_ranking_size_ep28_peak_0.jpg",
+      "video_review_remaining33_20261024/blocks_ranking_size_ep28_peak_1.jpg"
+    ]
+  },
+  {
+    "task": "move_stapler_pad",
+    "episode": 1,
+    "decision": "retain",
+    "observations": "右臂抓起蓝色订书机，f96–117搬到品红色垫上，f135后夹爪打开，订书机留在垫上。峰值f13为接近阶段，三视角连续，任务物体和目标颜色与指令一致。",
+    "frames": 140,
+    "peak_frame": 13,
+    "instructions": [
+      "With the right arm, position the blue stapler with ergonomic curve on the Magenta mat"
+    ],
+    "review_method": "主相机每3帧全程抽帧（5 fps，含末帧）+峰值附近16帧三相机逐帧；7条摇瓶另补每6帧活动腕视角。",
+    "video": "video_review_remaining33_20261024/move_stapler_pad_ep01.mp4",
+    "evidence": [
+      "video_review_remaining33_20261024/move_stapler_pad_ep01_overview_0.jpg",
+      "video_review_remaining33_20261024/move_stapler_pad_ep01_overview_1.jpg",
+      "video_review_remaining33_20261024/move_stapler_pad_ep01_peak_0.jpg",
+      "video_review_remaining33_20261024/move_stapler_pad_ep01_peak_1.jpg"
+    ]
+  },
+  {
+    "task": "open_laptop",
+    "episode": 11,
+    "decision": "retain",
+    "observations": "右臂接触盖缘后抬起，f120–126继续打开，末帧151盖已抬起、底座仍在桌面。f14峰值为正常接近；未核验环境开盖角度阈值。",
+    "frames": 152,
+    "peak_frame": 14,
+    "instructions": [
+      "Raise the laptop with red logo underside using the right arm."
+    ],
+    "review_method": "主相机每3帧全程抽帧（5 fps，含末帧）+峰值附近16帧三相机逐帧；7条摇瓶另补每6帧活动腕视角。",
+    "video": "video_review_remaining33_20261024/open_laptop_ep11.mp4",
+    "evidence": [
+      "video_review_remaining33_20261024/open_laptop_ep11_overview_0.jpg",
+      "video_review_remaining33_20261024/open_laptop_ep11_overview_1.jpg",
+      "video_review_remaining33_20261024/open_laptop_ep11_peak_0.jpg",
+      "video_review_remaining33_20261024/open_laptop_ep11_peak_1.jpg"
+    ]
+  },
+  {
+    "task": "open_laptop",
+    "episode": 19,
+    "decision": "retain",
+    "observations": "左臂接触盖缘并上推，f120–126盖旋转抬起、键盘底座可见。f15峰值为正常接近；末段部分被手臂遮挡，未核验角度阈值。",
+    "frames": 149,
+    "peak_frame": 15,
+    "instructions": [
+      "Push the medium-sized laptop with black body's lid upward using the left arm."
+    ],
+    "review_method": "主相机每3帧全程抽帧（5 fps，含末帧）+峰值附近16帧三相机逐帧；7条摇瓶另补每6帧活动腕视角。",
+    "video": "video_review_remaining33_20261024/open_laptop_ep19.mp4",
+    "evidence": [
+      "video_review_remaining33_20261024/open_laptop_ep19_overview_0.jpg",
+      "video_review_remaining33_20261024/open_laptop_ep19_overview_1.jpg",
+      "video_review_remaining33_20261024/open_laptop_ep19_peak_0.jpg",
+      "video_review_remaining33_20261024/open_laptop_ep19_peak_1.jpg"
+    ]
+  },
+  {
+    "task": "open_laptop",
+    "episode": 34,
+    "decision": "retain",
+    "observations": "右臂接触盖缘，f78后抬盖，f120–126继续打开，末帧149盖保持抬起、底座在桌面。f14接近阶段连续，未核验角度阈值。",
+    "frames": 150,
+    "peak_frame": 14,
+    "instructions": [
+      "Carefully open the black metallic laptop using the right arm"
+    ],
+    "review_method": "主相机每3帧全程抽帧（5 fps，含末帧）+峰值附近16帧三相机逐帧；7条摇瓶另补每6帧活动腕视角。",
+    "video": "video_review_remaining33_20261024/open_laptop_ep34.mp4",
+    "evidence": [
+      "video_review_remaining33_20261024/open_laptop_ep34_overview_0.jpg",
+      "video_review_remaining33_20261024/open_laptop_ep34_overview_1.jpg",
+      "video_review_remaining33_20261024/open_laptop_ep34_peak_0.jpg",
+      "video_review_remaining33_20261024/open_laptop_ep34_peak_1.jpg"
+    ]
+  },
+  {
+    "task": "place_cans_plasticbox",
+    "episode": 12,
+    "decision": "retain",
+    "observations": "双臂分别抓起两罐；左罐f159后放开留在盒中，右罐f243后放开，f264为撤离。末帧284两罐均直立在蓝盒内，峰值三视角无跳变。",
+    "frames": 285,
+    "peak_frame": 264,
+    "instructions": [
+      "Place the red-orange text on white can and the metallic drink can with pull-tab into the durable plasticbox with side handle with dual arms"
+    ],
+    "review_method": "主相机每3帧全程抽帧（5 fps，含末帧）+峰值附近16帧三相机逐帧；7条摇瓶另补每6帧活动腕视角。",
+    "video": "video_review_remaining33_20261024/place_cans_plasticbox_ep12.mp4",
+    "evidence": [
+      "video_review_remaining33_20261024/place_cans_plasticbox_ep12_overview_0.jpg",
+      "video_review_remaining33_20261024/place_cans_plasticbox_ep12_overview_1.jpg",
+      "video_review_remaining33_20261024/place_cans_plasticbox_ep12_overview_2.jpg",
+      "video_review_remaining33_20261024/place_cans_plasticbox_ep12_peak_0.jpg",
+      "video_review_remaining33_20261024/place_cans_plasticbox_ep12_peak_1.jpg"
+    ]
+  },
+  {
+    "task": "place_fan",
+    "episode": 13,
+    "decision": "retain",
+    "observations": "左臂夹住白风扇，f81起抬起，f96–111搬到蓝垫并转向，f132后夹爪打开，风扇留在垫上。f18峰值为接近阶段，三视角连续。",
+    "frames": 137,
+    "peak_frame": 18,
+    "instructions": [
+      "Lift the white fan with adjustable arm, align it toward the robot, and position it on the Blue mat."
+    ],
+    "review_method": "主相机每3帧全程抽帧（5 fps，含末帧）+峰值附近16帧三相机逐帧；7条摇瓶另补每6帧活动腕视角。",
+    "video": "video_review_remaining33_20261024/place_fan_ep13.mp4",
+    "evidence": [
+      "video_review_remaining33_20261024/place_fan_ep13_overview_0.jpg",
+      "video_review_remaining33_20261024/place_fan_ep13_overview_1.jpg",
+      "video_review_remaining33_20261024/place_fan_ep13_peak_0.jpg",
+      "video_review_remaining33_20261024/place_fan_ep13_peak_1.jpg"
+    ]
+  },
+  {
+    "task": "put_bottles_dustbin",
+    "episode": 17,
+    "decision": "retain",
+    "observations": "依次搬运水瓶、黄瓶、可乐瓶；水瓶左臂直接移向桶，后两瓶右臂抓取并交给左臂，f147、411、678附近可见瓶子向左侧桶内下落。末段桌面清空。峰值436为右臂接近第三瓶，画面连续。桶底不全可见，未核验环境成功标志。",
+    "frames": 684,
+    "peak_frame": 436,
+    "instructions": [
+      "Pick up the cylindrical yellow bottle for holding liquids, the bottle with ribbed design, and the black and red bottle, moving them one by one into the medium-sized black plastic dustbin."
+    ],
+    "review_method": "主相机每3帧全程抽帧（5 fps，含末帧）+峰值附近16帧三相机逐帧；7条摇瓶另补每6帧活动腕视角。",
+    "video": "video_review_remaining33_20261024/put_bottles_dustbin_ep17.mp4",
+    "evidence": [
+      "video_review_remaining33_20261024/put_bottles_dustbin_ep17_overview_0.jpg",
+      "video_review_remaining33_20261024/put_bottles_dustbin_ep17_overview_1.jpg",
+      "video_review_remaining33_20261024/put_bottles_dustbin_ep17_overview_2.jpg",
+      "video_review_remaining33_20261024/put_bottles_dustbin_ep17_overview_3.jpg",
+      "video_review_remaining33_20261024/put_bottles_dustbin_ep17_overview_4.jpg",
+      "video_review_remaining33_20261024/put_bottles_dustbin_ep17_overview_5.jpg",
+      "video_review_remaining33_20261024/put_bottles_dustbin_ep17_peak_0.jpg",
+      "video_review_remaining33_20261024/put_bottles_dustbin_ep17_peak_1.jpg"
+    ]
+  },
+  {
+    "task": "put_bottles_dustbin",
+    "episode": 43,
+    "decision": "retain",
+    "observations": "依次处理黄瓶、水瓶、可乐瓶；第一瓶左臂直接搬运，后两瓶右抓左接，f153、420、684附近可见向桶内下落，末帧桌面清空。峰值447对应右臂接近第三瓶，无物体跳变；桶底未完全可见。",
+    "frames": 691,
+    "peak_frame": 447,
+    "instructions": [
+      "Grab the medium yellow cylindrical bottle, the cylindrical bottle, and the plastic bottle with red cap sequentially, placing each into the medium-sized black plastic dustbin."
+    ],
+    "review_method": "主相机每3帧全程抽帧（5 fps，含末帧）+峰值附近16帧三相机逐帧；7条摇瓶另补每6帧活动腕视角。",
+    "video": "video_review_remaining33_20261024/put_bottles_dustbin_ep43.mp4",
+    "evidence": [
+      "video_review_remaining33_20261024/put_bottles_dustbin_ep43_overview_0.jpg",
+      "video_review_remaining33_20261024/put_bottles_dustbin_ep43_overview_1.jpg",
+      "video_review_remaining33_20261024/put_bottles_dustbin_ep43_overview_2.jpg",
+      "video_review_remaining33_20261024/put_bottles_dustbin_ep43_overview_3.jpg",
+      "video_review_remaining33_20261024/put_bottles_dustbin_ep43_overview_4.jpg",
+      "video_review_remaining33_20261024/put_bottles_dustbin_ep43_overview_5.jpg",
+      "video_review_remaining33_20261024/put_bottles_dustbin_ep43_peak_0.jpg",
+      "video_review_remaining33_20261024/put_bottles_dustbin_ep43_peak_1.jpg"
+    ]
+  },
+  {
+    "task": "rotate_qrcode",
+    "episode": 5,
+    "decision": "retain",
+    "observations": "右臂抓二维码牌，f90–117连续转动，码面由侧向转为朝机器人，f129后落回桌面并松爪。峰值96是正常旋转，三视角连续，无脱手。",
+    "frames": 154,
+    "peak_frame": 96,
+    "instructions": [
+      "Pick up the small black stand for payments and adjust its position to face the qrcode towards you."
+    ],
+    "review_method": "主相机每3帧全程抽帧（5 fps，含末帧）+峰值附近16帧三相机逐帧；7条摇瓶另补每6帧活动腕视角。",
+    "video": "video_review_remaining33_20261024/rotate_qrcode_ep05.mp4",
+    "evidence": [
+      "video_review_remaining33_20261024/rotate_qrcode_ep05_overview_0.jpg",
+      "video_review_remaining33_20261024/rotate_qrcode_ep05_overview_1.jpg",
+      "video_review_remaining33_20261024/rotate_qrcode_ep05_peak_0.jpg",
+      "video_review_remaining33_20261024/rotate_qrcode_ep05_peak_1.jpg"
+    ]
+  },
+  {
+    "task": "rotate_qrcode",
+    "episode": 19,
+    "decision": "retain",
+    "observations": "右臂抓起白黄二维码牌，f90–117连续旋转至码面朝机器人，f129后降落并松爪，末帧153稳定。峰值97为正常旋转。",
+    "frames": 154,
+    "peak_frame": 97,
+    "instructions": [
+      "Use the right arm to grab the white stand sign, rotate, and face the QR code towards you."
+    ],
+    "review_method": "主相机每3帧全程抽帧（5 fps，含末帧）+峰值附近16帧三相机逐帧；7条摇瓶另补每6帧活动腕视角。",
+    "video": "video_review_remaining33_20261024/rotate_qrcode_ep19.mp4",
+    "evidence": [
+      "video_review_remaining33_20261024/rotate_qrcode_ep19_overview_0.jpg",
+      "video_review_remaining33_20261024/rotate_qrcode_ep19_overview_1.jpg",
+      "video_review_remaining33_20261024/rotate_qrcode_ep19_peak_0.jpg",
+      "video_review_remaining33_20261024/rotate_qrcode_ep19_peak_1.jpg"
+    ]
+  },
+  {
+    "task": "scan_object",
+    "episode": 4,
+    "decision": "retain",
+    "observations": "左臂抓青色茶盒、右臂抓扫描器，f84起抬起，茶盒转向，f153–165扫描器靠近盒面并保持。峰值18接近阶段连续；未见脱手，扫码触发标志未核验。",
+    "frames": 180,
+    "peak_frame": 18,
+    "instructions": [
+      "Hold the barcode scanner in one arm, pick up the decorative tea-box with the other, then use the barcode scanner to scan the decorative tea-box"
+    ],
+    "review_method": "主相机每3帧全程抽帧（5 fps，含末帧）+峰值附近16帧三相机逐帧；7条摇瓶另补每6帧活动腕视角。",
+    "video": "video_review_remaining33_20261024/scan_object_ep04.mp4",
+    "evidence": [
+      "video_review_remaining33_20261024/scan_object_ep04_overview_0.jpg",
+      "video_review_remaining33_20261024/scan_object_ep04_overview_1.jpg",
+      "video_review_remaining33_20261024/scan_object_ep04_peak_0.jpg",
+      "video_review_remaining33_20261024/scan_object_ep04_peak_1.jpg"
+    ]
+  },
+  {
+    "task": "scan_object",
+    "episode": 20,
+    "decision": "retain",
+    "observations": "左臂抓红茶盒、右臂抓扫描器，f78后抬起，f99–111茶盒连续转向，f141–153扫描器对准盒面并保持。峰值106为转向；未见脱手，扫描成功标志未核验。",
+    "frames": 167,
+    "peak_frame": 106,
+    "instructions": [
+      "Pick the rectangular tea-box, grab the hand scanner with blue lens area, and use the scanner to scan the object."
+    ],
+    "review_method": "主相机每3帧全程抽帧（5 fps，含末帧）+峰值附近16帧三相机逐帧；7条摇瓶另补每6帧活动腕视角。",
+    "video": "video_review_remaining33_20261024/scan_object_ep20.mp4",
+    "evidence": [
+      "video_review_remaining33_20261024/scan_object_ep20_overview_0.jpg",
+      "video_review_remaining33_20261024/scan_object_ep20_overview_1.jpg",
+      "video_review_remaining33_20261024/scan_object_ep20_peak_0.jpg",
+      "video_review_remaining33_20261024/scan_object_ep20_peak_1.jpg"
+    ]
+  },
+  {
+    "task": "scan_object",
+    "episode": 42,
+    "decision": "retain",
+    "observations": "左臂抓青色金顶茶盒、右臂抓黑黄扫描器，f84起抬起，f108–117旋转茶盒，f141–156扫描器靠近盒面，末段持握稳定。峰值110为正常转向，执行臂符合指令；扫码触发未核验。",
+    "frames": 167,
+    "peak_frame": 110,
+    "instructions": [
+      "Use the right arm to pick the gun-shaped scanner, the left arm to grab the gold accented tea-box, and scan the gold accented tea-box using the gun-shaped scanner."
+    ],
+    "review_method": "主相机每3帧全程抽帧（5 fps，含末帧）+峰值附近16帧三相机逐帧；7条摇瓶另补每6帧活动腕视角。",
+    "video": "video_review_remaining33_20261024/scan_object_ep42.mp4",
+    "evidence": [
+      "video_review_remaining33_20261024/scan_object_ep42_overview_0.jpg",
+      "video_review_remaining33_20261024/scan_object_ep42_overview_1.jpg",
+      "video_review_remaining33_20261024/scan_object_ep42_peak_0.jpg",
+      "video_review_remaining33_20261024/scan_object_ep42_peak_1.jpg"
+    ]
+  },
+  {
+    "task": "shake_bottle",
+    "episode": 21,
+    "decision": "retain",
+    "observations": "指令指定右臂，视频由右臂抓取花纹瓶，f81–96抬起，f120–240主视角可见周期上下运动。右腕f90–240瓶体持续留在夹爪附近；峰值f15是接近动作。未见落瓶，摇动幅度及次数未按模拟器阈值验证。",
+    "frames": 241,
+    "peak_frame": 15,
+    "instructions": [
+      "Pick the small bottle with decorative design up using the right arm and shake it."
+    ],
+    "review_method": "主相机每3帧全程抽帧（5 fps，含末帧）+峰值附近16帧三相机逐帧；7条摇瓶另补每6帧活动腕视角。",
+    "video": "video_review_remaining33_20261024/shake_bottle_ep21.mp4",
+    "evidence": [
+      "video_review_remaining33_20261024/shake_bottle_ep21_overview_0.jpg",
+      "video_review_remaining33_20261024/shake_bottle_ep21_overview_1.jpg",
+      "video_review_remaining33_20261024/shake_bottle_ep21_overview_2.jpg",
+      "video_review_remaining33_20261024/shake_bottle_ep21_peak_0.jpg",
+      "video_review_remaining33_20261024/shake_bottle_ep21_peak_1.jpg",
+      "wrist_supplement/shake_bottle_ep21_wrist.jpg"
+    ]
+  },
+  {
+    "task": "shake_bottle",
+    "episode": 40,
+    "decision": "retain",
+    "observations": "指令指定左臂，左臂抓橙色瓶，f78–90抬起，f105–236可见周期上下运动。左腕f90–236持续持握，瓶体有轻微相对晃动而未脱离；峰值f14是接近动作，未见失败。",
+    "frames": 237,
+    "peak_frame": 14,
+    "instructions": [
+      "Use the left arm to grab the plastic bottle and shake properly."
+    ],
+    "review_method": "主相机每3帧全程抽帧（5 fps，含末帧）+峰值附近16帧三相机逐帧；7条摇瓶另补每6帧活动腕视角。",
+    "video": "video_review_remaining33_20261024/shake_bottle_ep40.mp4",
+    "evidence": [
+      "video_review_remaining33_20261024/shake_bottle_ep40_overview_0.jpg",
+      "video_review_remaining33_20261024/shake_bottle_ep40_overview_1.jpg",
+      "video_review_remaining33_20261024/shake_bottle_ep40_peak_0.jpg",
+      "video_review_remaining33_20261024/shake_bottle_ep40_peak_1.jpg",
+      "wrist_supplement/shake_bottle_ep40_wrist.jpg"
+    ]
+  },
+  {
+    "task": "shake_bottle",
+    "episode": 45,
+    "decision": "retain",
+    "observations": "指令指定左臂，左臂抓咖啡瓶，f78–90抬起，f105–236主视角边缘可见周期上下运动。左腕f90–236瓶体始终在夹爪附近；峰值f14是接近动作，未见脱落。主视角部分遮挡，不量化摇动次数。",
+    "frames": 237,
+    "peak_frame": 14,
+    "instructions": [
+      "Lift up the brown bottle using the left arm, then shake."
+    ],
+    "review_method": "主相机每3帧全程抽帧（5 fps，含末帧）+峰值附近16帧三相机逐帧；7条摇瓶另补每6帧活动腕视角。",
+    "video": "video_review_remaining33_20261024/shake_bottle_ep45.mp4",
+    "evidence": [
+      "video_review_remaining33_20261024/shake_bottle_ep45_overview_0.jpg",
+      "video_review_remaining33_20261024/shake_bottle_ep45_overview_1.jpg",
+      "video_review_remaining33_20261024/shake_bottle_ep45_peak_0.jpg",
+      "video_review_remaining33_20261024/shake_bottle_ep45_peak_1.jpg",
+      "wrist_supplement/shake_bottle_ep45_wrist.jpg"
+    ]
+  },
+  {
+    "task": "shake_bottle_horizontally",
+    "episode": 20,
+    "decision": "retain",
+    "observations": "左臂f54–60抓瓶，f93–102抬起；随后瓶体移出主相机上缘。补看f90至277的左腕视角，瓶颈与夹爪相对位置稳定，未见滑落；主视角阴影有周期运动。瓶体近距离遮挡且背景缺少参照，无法仅凭视频精确确认水平摇动幅度或次数；没有明确失败证据，保留并记录可见性限制。",
+    "frames": 278,
+    "peak_frame": 19,
+    "instructions": [
+      "Lift the bottle shaped like small cylinder and move it side-to-side."
+    ],
+    "review_method": "主相机每3帧全程抽帧（5 fps，含末帧）+峰值附近16帧三相机逐帧；7条摇瓶另补每6帧活动腕视角。",
+    "video": "video_review_remaining33_20261024/shake_bottle_horizontally_ep20.mp4",
+    "evidence": [
+      "video_review_remaining33_20261024/shake_bottle_horizontally_ep20_overview_0.jpg",
+      "video_review_remaining33_20261024/shake_bottle_horizontally_ep20_overview_1.jpg",
+      "video_review_remaining33_20261024/shake_bottle_horizontally_ep20_overview_2.jpg",
+      "video_review_remaining33_20261024/shake_bottle_horizontally_ep20_peak_0.jpg",
+      "video_review_remaining33_20261024/shake_bottle_horizontally_ep20_peak_1.jpg",
+      "wrist_supplement/shake_bottle_horizontally_ep20_wrist.jpg"
+    ]
+  },
+  {
+    "task": "shake_bottle_horizontally",
+    "episode": 21,
+    "decision": "retain",
+    "observations": "右臂抓取花纹瓶，f81–96抬起，f114–120转向；主视角后半段可见周期运动，峰值f116附近是连续转腕。补看右腕f90–270，瓶体保持在夹爪附近，背景方向交替变化，未见滑落；不量化摇动次数或官方成功条件。",
+    "frames": 271,
+    "peak_frame": 116,
+    "instructions": [
+      "Lift the plastic bottle and shake it horizontally."
+    ],
+    "review_method": "主相机每3帧全程抽帧（5 fps，含末帧）+峰值附近16帧三相机逐帧；7条摇瓶另补每6帧活动腕视角。",
+    "video": "video_review_remaining33_20261024/shake_bottle_horizontally_ep21.mp4",
+    "evidence": [
+      "video_review_remaining33_20261024/shake_bottle_horizontally_ep21_overview_0.jpg",
+      "video_review_remaining33_20261024/shake_bottle_horizontally_ep21_overview_1.jpg",
+      "video_review_remaining33_20261024/shake_bottle_horizontally_ep21_overview_2.jpg",
+      "video_review_remaining33_20261024/shake_bottle_horizontally_ep21_peak_0.jpg",
+      "video_review_remaining33_20261024/shake_bottle_horizontally_ep21_peak_1.jpg",
+      "wrist_supplement/shake_bottle_horizontally_ep21_wrist.jpg"
+    ]
+  },
+  {
+    "task": "shake_bottle_horizontally",
+    "episode": 40,
+    "decision": "retain",
+    "observations": "左臂抓橙色瓶，f78–90抬起，f108–120转向；主视角f156–168、201–216、243–267可见重复摆动。左腕f90–267显示持续持握及背景方向变化；峰值f15属于接近阶段，无可见突跳或落瓶。",
+    "frames": 268,
+    "peak_frame": 15,
+    "instructions": [
+      "Grab the grooved orange drink bottle and move it side-to-side repeatedly."
+    ],
+    "review_method": "主相机每3帧全程抽帧（5 fps，含末帧）+峰值附近16帧三相机逐帧；7条摇瓶另补每6帧活动腕视角。",
+    "video": "video_review_remaining33_20261024/shake_bottle_horizontally_ep40.mp4",
+    "evidence": [
+      "video_review_remaining33_20261024/shake_bottle_horizontally_ep40_overview_0.jpg",
+      "video_review_remaining33_20261024/shake_bottle_horizontally_ep40_overview_1.jpg",
+      "video_review_remaining33_20261024/shake_bottle_horizontally_ep40_overview_2.jpg",
+      "video_review_remaining33_20261024/shake_bottle_horizontally_ep40_peak_0.jpg",
+      "video_review_remaining33_20261024/shake_bottle_horizontally_ep40_peak_1.jpg",
+      "wrist_supplement/shake_bottle_horizontally_ep40_wrist.jpg"
+    ]
+  },
+  {
+    "task": "shake_bottle_horizontally",
+    "episode": 45,
+    "decision": "retain",
+    "observations": "左臂抓咖啡瓶，f78–90抬起，f105–117转向；f150–174、195–216、234–263重复摆动。峰值f110属于连续转腕；左腕f90–263瓶体相对夹爪稳定，背景方向交替，未见滑落。",
+    "frames": 264,
+    "peak_frame": 110,
+    "instructions": [
+      "Lift the plastic bottle with ribbed pattern and shake it horizontally."
+    ],
+    "review_method": "主相机每3帧全程抽帧（5 fps，含末帧）+峰值附近16帧三相机逐帧；7条摇瓶另补每6帧活动腕视角。",
+    "video": "video_review_remaining33_20261024/shake_bottle_horizontally_ep45.mp4",
+    "evidence": [
+      "video_review_remaining33_20261024/shake_bottle_horizontally_ep45_overview_0.jpg",
+      "video_review_remaining33_20261024/shake_bottle_horizontally_ep45_overview_1.jpg",
+      "video_review_remaining33_20261024/shake_bottle_horizontally_ep45_overview_2.jpg",
+      "video_review_remaining33_20261024/shake_bottle_horizontally_ep45_peak_0.jpg",
+      "video_review_remaining33_20261024/shake_bottle_horizontally_ep45_peak_1.jpg",
+      "wrist_supplement/shake_bottle_horizontally_ep45_wrist.jpg"
+    ]
+  },
+  {
+    "task": "stamp_seal",
+    "episode": 0,
+    "decision": "retain",
+    "observations": "左臂f75附近抓住红色印章，f93起抬起，f111–129移向米色垫，f132–138向下接触，f153–159张开夹爪并上移，印章留在垫上。峰值f21附近为连续接近动作。视频可见接触/放置，不验证压力或印迹。",
+    "frames": 160,
+    "peak_frame": 21,
+    "instructions": [
+      "Grab the plastic seal with handle and press onto Beige"
+    ],
+    "review_method": "主相机每3帧全程抽帧（5 fps，含末帧）+峰值附近16帧三相机逐帧；7条摇瓶另补每6帧活动腕视角。",
+    "video": "video_review_remaining33_20261024/stamp_seal_ep00.mp4",
+    "evidence": [
+      "video_review_remaining33_20261024/stamp_seal_ep00_overview_0.jpg",
+      "video_review_remaining33_20261024/stamp_seal_ep00_overview_1.jpg",
+      "video_review_remaining33_20261024/stamp_seal_ep00_peak_0.jpg",
+      "video_review_remaining33_20261024/stamp_seal_ep00_peak_1.jpg"
+    ]
+  },
+  {
+    "task": "turn_switch",
+    "episode": 3,
+    "decision": "retain",
+    "observations": "左臂f36–48接近开关，f51–57推动，随后开关前面板姿态改变、上缘出现暗槽，末段保持。峰值f41附近三视角连续；未见明确失败，不验证内部通电状态。",
+    "frames": 99,
+    "peak_frame": 41,
+    "instructions": [
+      "Engage the rectangular switch with curved lever using the robotic arm"
+    ],
+    "review_method": "主相机每3帧全程抽帧（5 fps，含末帧）+峰值附近16帧三相机逐帧；7条摇瓶另补每6帧活动腕视角。",
+    "video": "video_review_remaining33_20261024/turn_switch_ep03.mp4",
+    "evidence": [
+      "video_review_remaining33_20261024/turn_switch_ep03_overview_0.jpg",
+      "video_review_remaining33_20261024/turn_switch_ep03_peak_0.jpg",
+      "video_review_remaining33_20261024/turn_switch_ep03_peak_1.jpg"
+    ]
+  },
+  {
+    "task": "turn_switch",
+    "episode": 7,
+    "decision": "retain",
+    "observations": "左臂先绕行调整姿态，f75–90再次接近开关，f93–99前面板转动并出现暗槽，末段保持。峰值f55在绕行转腕段，腕相机随手臂旋转，画面连续，未见异常瞬移。",
+    "frames": 122,
+    "peak_frame": 55,
+    "instructions": [
+      "Activate the red and black switch with the left arm."
+    ],
+    "review_method": "主相机每3帧全程抽帧（5 fps，含末帧）+峰值附近16帧三相机逐帧；7条摇瓶另补每6帧活动腕视角。",
+    "video": "video_review_remaining33_20261024/turn_switch_ep07.mp4",
+    "evidence": [
+      "video_review_remaining33_20261024/turn_switch_ep07_overview_0.jpg",
+      "video_review_remaining33_20261024/turn_switch_ep07_overview_1.jpg",
+      "video_review_remaining33_20261024/turn_switch_ep07_peak_0.jpg",
+      "video_review_remaining33_20261024/turn_switch_ep07_peak_1.jpg"
+    ]
+  },
+  {
+    "task": "turn_switch",
+    "episode": 12,
+    "decision": "retain",
+    "observations": "左臂f36–48接近深色墙面开关，f51–57向下运动并接触，末段在面板前保持。峰值f41是连续接近，主相机面板细节较暗，不能据视频独立确认内部激活阈值；未见明显空推或碰倒，保留。",
+    "frames": 101,
+    "peak_frame": 41,
+    "instructions": [
+      "Set the left arm to press the black switch with matte coating"
+    ],
+    "review_method": "主相机每3帧全程抽帧（5 fps，含末帧）+峰值附近16帧三相机逐帧；7条摇瓶另补每6帧活动腕视角。",
+    "video": "video_review_remaining33_20261024/turn_switch_ep12.mp4",
+    "evidence": [
+      "video_review_remaining33_20261024/turn_switch_ep12_overview_0.jpg",
+      "video_review_remaining33_20261024/turn_switch_ep12_peak_0.jpg",
+      "video_review_remaining33_20261024/turn_switch_ep12_peak_1.jpg"
+    ]
+  },
+  {
+    "task": "turn_switch",
+    "episode": 24,
+    "decision": "retain",
+    "observations": "右臂绕行后f66–78到达白色开关，f78–84接触面板并保持至末帧。峰值f53在绕行转腕段，右腕视角连续变化。白色面板对比度低，接触处部分被夹爪挡住，内部激活阈值不可从画面确认；无明确失败证据，保留。",
+    "frames": 122,
+    "peak_frame": 53,
+    "instructions": [
+      "Activate the red bar switch via the right arm"
+    ],
+    "review_method": "主相机每3帧全程抽帧（5 fps，含末帧）+峰值附近16帧三相机逐帧；7条摇瓶另补每6帧活动腕视角。",
+    "video": "video_review_remaining33_20261024/turn_switch_ep24.mp4",
+    "evidence": [
+      "video_review_remaining33_20261024/turn_switch_ep24_overview_0.jpg",
+      "video_review_remaining33_20261024/turn_switch_ep24_overview_1.jpg",
+      "video_review_remaining33_20261024/turn_switch_ep24_peak_0.jpg",
+      "video_review_remaining33_20261024/turn_switch_ep24_peak_1.jpg"
+    ]
+  },
+  {
+    "task": "turn_switch",
+    "episode": 28,
+    "decision": "retain",
+    "observations": "右臂f39–51接近米色开关，f66–72面板明显转动、上部亮边改变，末段保持。峰值f41是连续接近动作，未见失败；不验证内部通电状态。",
+    "frames": 103,
+    "peak_frame": 41,
+    "instructions": [
+      "Approach and tap the beige switch via the right arm"
+    ],
+    "review_method": "主相机每3帧全程抽帧（5 fps，含末帧）+峰值附近16帧三相机逐帧；7条摇瓶另补每6帧活动腕视角。",
+    "video": "video_review_remaining33_20261024/turn_switch_ep28.mp4",
+    "evidence": [
+      "video_review_remaining33_20261024/turn_switch_ep28_overview_0.jpg",
+      "video_review_remaining33_20261024/turn_switch_ep28_peak_0.jpg",
+      "video_review_remaining33_20261024/turn_switch_ep28_peak_1.jpg"
+    ]
+  },
+  {
+    "task": "turn_switch",
+    "episode": 39,
+    "decision": "retain",
+    "observations": "右臂f39–54接近灰色开关，f66–72前面板转动并露出暗槽，随后保持。峰值f41在接近阶段，三视角连续，未见异常突跳。",
+    "frames": 105,
+    "peak_frame": 41,
+    "instructions": [
+      "Trigger the red and black switch with precision"
+    ],
+    "review_method": "主相机每3帧全程抽帧（5 fps，含末帧）+峰值附近16帧三相机逐帧；7条摇瓶另补每6帧活动腕视角。",
+    "video": "video_review_remaining33_20261024/turn_switch_ep39.mp4",
+    "evidence": [
+      "video_review_remaining33_20261024/turn_switch_ep39_overview_0.jpg",
+      "video_review_remaining33_20261024/turn_switch_ep39_peak_0.jpg",
+      "video_review_remaining33_20261024/turn_switch_ep39_peak_1.jpg"
+    ]
+  },
+  {
+    "task": "turn_switch",
+    "episode": 42,
+    "decision": "retain",
+    "observations": "左臂先绕行，f66–78到达米色开关，f81–87面板转动、上缘变亮，末段保持。峰值f48在绕行段，左腕视角连续旋转；未见明显失败。",
+    "frames": 113,
+    "peak_frame": 48,
+    "instructions": [
+      "Activate the trapezoid-shaped switch smooth surface with robotic precision"
+    ],
+    "review_method": "主相机每3帧全程抽帧（5 fps，含末帧）+峰值附近16帧三相机逐帧；7条摇瓶另补每6帧活动腕视角。",
+    "video": "video_review_remaining33_20261024/turn_switch_ep42.mp4",
+    "evidence": [
+      "video_review_remaining33_20261024/turn_switch_ep42_overview_0.jpg",
+      "video_review_remaining33_20261024/turn_switch_ep42_peak_0.jpg",
+      "video_review_remaining33_20261024/turn_switch_ep42_peak_1.jpg"
+    ]
+  }
+]

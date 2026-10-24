@@ -1,0 +1,31 @@
+{
+  "review_date": "2026-10-24",
+  "queue_episodes": 33,
+  "reviewed_episodes": 33,
+  "retain": 33,
+  "exclude": 0,
+  "pending_in_this_queue": 0,
+  "reviewed_episode_timesteps": 6947,
+  "base_contact_sheets_reviewed": 142,
+  "wrist_supplement_sheets_reviewed": 7,
+  "dataset_episodes": 2455,
+  "dataset_frames": 540182,
+  "dataset_tasks": 50,
+  "dataset_total_excluded": 45,
+  "dataset_selection_changed": false,
+  "cloud_credits_observed_this_round": 1,
+  "cloud_released": true,
+  "training_started": false,
+  "remaining_budget_conservative": 30,
+  "budget_note": "32上限扣本轮界面已显示1credit和上轮预留1credit；不是账户余额，最终以账单为准。",
+  "scope": "关闭的是指定33条视频复核队列，不代表全2455条均经逐帧目视验证。",
+  "limits": [
+    "全程5fps抽帧，不是全视频每一原始帧目视检查。",
+    "部分摇瓶/开关存在遮挡，内部成功判定、精确运动阈值未验证。",
+    "原先21条统计剔除仍为启发式判断。",
+    "此前23条面包语言冲突依据源码/夹爪序列，非逐条视频确认。",
+    "122条多手臂指令未全面语义验证。",
+    "2455条本机parquet/索引/统计已验证；云端LeRobot视频加载与LingBot norm_stats仍待训练前验证。",
+    "原视频依赖云端原数据，筛选包包含视频链接而非完整原视频。"
+  ]
+}

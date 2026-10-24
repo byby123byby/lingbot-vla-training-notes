@@ -1,0 +1,54 @@
+LingBot-VLA-v2 官方模型最小闭环验证
+日期：2026-10-24（北京时间）
+
+结论
+已在 AMD Radeon Cloud 中国站使用 1 张 Radeon PRO W7900D 完成模型加载、GPU 推理和 RoboTwin 单回合闭环。有效回合执行 400/400 步、调用模型 16 次，进程正常退出（exit 0）。adjust_bottle 任务未成功，结果 0/1；本次证明运行链路可用，不能代表比赛成绩或模型已收敛。未进行训练或万回合评测。
+
+资源及释放
+实例：连接标识已从公开副本移除。
+入口：https://developer.amd.com.cn/radeon/
+配置：Dev，1 GPU，16 CPU，55 GB RAM；robotwin 镜像；25 GB 持久化 /workspace；Devzone 挂载到 /models。
+模型：robbyant/lingbot-vla-v2-6b，使用镜像内的官方基座权重；不是队友的训练检查点，也不是 RoboTwin 专项微调权重。
+PyTorch 2.9.1+rocm7.2.1；ROCm 7.2.53211。
+释放前平台显示已消耗 1 积分。释放后页面明确显示“没有正在运行的实例”，截图 instance-released.png。
+持久化目录保留，全部结果已在释放前下载本地，并验证 SHA-256 一致。
+
+执行结果
+首轮脚本：北京时间 01:08:29–01:10:31，推理成功，但 seed=100000 的瓶子初始化不稳定，原评测脚本跳过场景后仍输出 0/1。这一轮不能算有效闭环。
+重试脚本：北京时间 01:17:05–01:21:33。
+任务 adjust_bottle；demo_clean；seed=100001；expert_check=true；accept_expert_info_on_failure=true；eval_batch=false；视频关闭。
+专家规划记录了一次 IK 找不到解，按官方参数继续。
+有效回合：400 步，16 次动作生成调用；每次动作张量 [25,14]；任务结果 0/1。
+客户端推理调用耗时（本回合16次）：平均 0.7679 秒，P50 0.7668 秒，P95 0.7732 秒，总计 12.2859 秒。这是调用时延，不是整回合耗时，不应由此推断完整评测吞吐。
+模型服务日志共19次 sample_actions：3次独立推理验证 + 16次闭环调用。
+
+最小修复及原始证据
+未修改镜像中的官方源码。将评测入口复制到 /workspace/eval_policy_smoke_retry.py，只改：
+1. 固定仓库根目录为 /RoboTwin（副本存放位置不同）。
+2. 场景初始化不稳定时打印种子和错误、退回已计数回合并尝试下一种子；最多10个种子，防止无界重试。
+修改差异保存在 scene_retry.patch。原始轮次日志和重试日志均保留。
+run_official_smoke.sh 是原始流程；run_official_retry.sh 使用上述诊断副本。
+脚本退出会停止它启动的模型服务，但云实例需要另外在平台释放。本次已释放。
+
+文件位置
+本机：本报告同目录下 lingbot_official_results_20261024.tar.gz
+解压目录：official-complete-result/
+云端持久化：/workspace/lingbot_official_results_20261024.tar.gz
+云端日志：/workspace/lingbot_smoke_20261024/ 与 /workspace/lingbot_retry_20261024/
+完整压缩包 SHA-256：25e519cea79710ba8f956d153a35e84b9a593acad18205ef52d01cdcd0c74abd
+
+复现方法
+创建同样的 robotwin Dev 实例并挂载相同 Devzone 和持久化 /workspace。
+已有文件时执行：bash /workspace/run_official_retry.sh
+该脚本输出目录为固定名称；再次实验前应修改 OUT 以避免覆盖本轮日志。
+
+源码版本
+RoboTwin：266f3aadf505a4f7fe9af0faa41a20f5f47cd123
+XPolicyLab：c37109c500be67d0dea6b36bf7337bbd26e763cd
+LingBot-VLA-v2：951475ae1b1d87553e7dc47c97b53a3d695c0d13
+
+参考资料
+比赛：https://tianchi.aliyun.com/competition/entrance/532514
+官方模型：https://github.com/Robbyant/lingbot-vla-v2
+AMD复现指南：https://github.com/ZiguanWang/Robotwin-radeon-cloud/blob/main/Reproduce_Guide.md
+AMD比赛资源：https://github.com/AMD-DEV-CONTEST/Embodied-AI-Challenge-AMD-Platform-2026-09

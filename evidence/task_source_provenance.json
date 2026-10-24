@@ -1,0 +1,72 @@
+[
+  {
+    "task": "blocks_ranking_rgb",
+    "url": "https://raw.githubusercontent.com/RoboTwin-Platform/RoboTwin/main/envs/blocks_ranking_rgb.py",
+    "success": true,
+    "sha256": "0e632df38d9024e7952c0df7a1f59e3d011b537724e6e6588455dee4d4e6074b",
+    "error": null
+  },
+  {
+    "task": "blocks_ranking_size",
+    "url": "https://raw.githubusercontent.com/RoboTwin-Platform/RoboTwin/main/envs/blocks_ranking_size.py",
+    "success": true,
+    "sha256": "18ddb8ca5465f450ef03db292bcfc22e8e795fcb397f104fc24213a5fa063696",
+    "error": null
+  },
+  {
+    "task": "handover_block",
+    "url": "https://raw.githubusercontent.com/RoboTwin-Platform/RoboTwin/main/envs/handover_block.py",
+    "success": true,
+    "sha256": "5439712296d7e143d41f8e78b4ab86cd4fad7fb98f40f5f5abb067a462d17650",
+    "error": null
+  },
+  {
+    "task": "handover_mic",
+    "url": "https://raw.githubusercontent.com/RoboTwin-Platform/RoboTwin/main/envs/handover_mic.py",
+    "success": true,
+    "sha256": "41ed0f2561cc8f1ae2449ba405decd4f5d7e3b80243b60921598657551891b17",
+    "error": null
+  },
+  {
+    "task": "hanging_mug",
+    "url": "https://raw.githubusercontent.com/RoboTwin-Platform/RoboTwin/main/envs/hanging_mug.py",
+    "success": true,
+    "sha256": "8793ed6be6a80b18a10690767a1910c3c49a7a9e4887ecbdd48a191ca3e03034",
+    "error": null
+  },
+  {
+    "task": "place_object_basket",
+    "url": "https://raw.githubusercontent.com/RoboTwin-Platform/RoboTwin/main/envs/place_object_basket.py",
+    "success": true,
+    "sha256": "e809bd3eabac48cb34589f164291b04b9e2fbf6cc1ebd8c4024c0af8e265ed48",
+    "error": null
+  },
+  {
+    "task": "scan_object",
+    "url": "https://raw.githubusercontent.com/RoboTwin-Platform/RoboTwin/main/envs/scan_object.py",
+    "success": true,
+    "sha256": "860dfe2cc86d180096089bc87502c7904f7ce2efb64fb32620c1720ca0178c2b",
+    "error": null
+  },
+  {
+    "task": "stack_blocks_three",
+    "url": "https://raw.githubusercontent.com/RoboTwin-Platform/RoboTwin/main/envs/stack_blocks_three.py",
+    "success": true,
+    "sha256": "b19f1f1c5a3a2c7c7312a4e1b2e577ccd269ebb0c444c287fecbc16ff5b47fb9",
+    "error": null
+  },
+  {
+    "task": "stack_blocks_two",
+    "url": "https://raw.githubusercontent.com/RoboTwin-Platform/RoboTwin/main/envs/stack_blocks_two.py",
+    "success": true,
+    "sha256": "4e92a679cb5be4ef87a1b842432c930560a2c9b539a4cbcee0161e2b2112f526",
+    "error": null
+  },
+  {
+    "task": "stack_bowls_two",
+    "url": "https://raw.githubusercontent.com/RoboTwin-Platform/RoboTwin/main/envs/stack_bowls_two.py",
+    "success": true,
+    "sha256": "3e3217c277d84a0838739d55a0061a9acb3315240b5a99c6607d9637ea719637",
+    "error": null
+  }
+]

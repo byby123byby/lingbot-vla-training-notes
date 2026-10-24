@@ -1,0 +1,738 @@
+[
+  {
+    "task": "place_bread_skillet",
+    "original_episode": 3,
+    "filtered_episode": 3,
+    "frames": 174,
+    "instructions": [
+      "Grab the cuboid bread with the left arm and place in the skillet for frying food"
+    ],
+    "named_arms": [
+      "left"
+    ],
+    "joint_range_max_rad": {
+      "left": 2.162597417831421,
+      "right": 2.4940526485443115
+    },
+    "decision": "exclude_bread_arm_instruction_conflict",
+    "review_flags": [],
+    "bread_arm_from_release_and_task_source": "right",
+    "initial_grippers_lr": [
+      1.0,
+      1.0
+    ],
+    "final_state_grippers_lr": [
+      0.0,
+      1.0
+    ],
+    "final_action_grippers_lr": [
+      0.0,
+      1.0
+    ],
+    "release_start_frame": 155
+  },
+  {
+    "task": "place_bread_skillet",
+    "original_episode": 5,
+    "filtered_episode": 5,
+    "frames": 164,
+    "instructions": [
+      "Use the right arm to take the square-shaped bread and move it into the metal skillet with comfortable grip."
+    ],
+    "named_arms": [
+      "right"
+    ],
+    "joint_range_max_rad": {
+      "left": 2.0009987354278564,
+      "right": 2.1758878231048584
+    },
+    "decision": "exclude_bread_arm_instruction_conflict",
+    "review_flags": [],
+    "bread_arm_from_release_and_task_source": "left",
+    "initial_grippers_lr": [
+      1.0,
+      1.0
+    ],
+    "final_state_grippers_lr": [
+      1.0,
+      0.0
+    ],
+    "final_action_grippers_lr": [
+      1.0,
+      0.0
+    ],
+    "release_start_frame": 145
+  },
+  {
+    "task": "place_bread_skillet",
+    "original_episode": 7,
+    "filtered_episode": 7,
+    "frames": 159,
+    "instructions": [
+      "Move the bread with golden crust to the black skillet with smooth base using the left arm"
+    ],
+    "named_arms": [
+      "left"
+    ],
+    "joint_range_max_rad": {
+      "left": 2.1627354621887207,
+      "right": 2.260845899581909
+    },
+    "decision": "exclude_bread_arm_instruction_conflict",
+    "review_flags": [],
+    "bread_arm_from_release_and_task_source": "right",
+    "initial_grippers_lr": [
+      1.0,
+      1.0
+    ],
+    "final_state_grippers_lr": [
+      0.0,
+      1.0
+    ],
+    "final_action_grippers_lr": [
+      0.0,
+      1.0
+    ],
+    "release_start_frame": 140
+  },
+  {
+    "task": "place_bread_skillet",
+    "original_episode": 9,
+    "filtered_episode": 9,
+    "frames": 158,
+    "instructions": [
+      "Use the right arm to stick the bread loaf with bumpy surface into the round cooking pan."
+    ],
+    "named_arms": [
+      "right"
+    ],
+    "joint_range_max_rad": {
+      "left": 2.186152219772339,
+      "right": 2.1761460304260254
+    },
+    "decision": "exclude_bread_arm_instruction_conflict",
+    "review_flags": [],
+    "bread_arm_from_release_and_task_source": "left",
+    "initial_grippers_lr": [
+      1.0,
+      1.0
+    ],
+    "final_state_grippers_lr": [
+      1.0,
+      0.0
+    ],
+    "final_action_grippers_lr": [
+      1.0,
+      0.0
+    ],
+    "release_start_frame": 139
+  },
+  {
+    "task": "place_bread_skillet",
+    "original_episode": 10,
+    "filtered_episode": 10,
+    "frames": 166,
+    "instructions": [
+      "Use the right arm to move the golden bread loaf into the flat-bottomed skillet with long handle"
+    ],
+    "named_arms": [
+      "right"
+    ],
+    "joint_range_max_rad": {
+      "left": 1.9645549058914185,
+      "right": 2.1762895584106445
+    },
+    "decision": "exclude_bread_arm_instruction_conflict",
+    "review_flags": [],
+    "bread_arm_from_release_and_task_source": "left",
+    "initial_grippers_lr": [
+      1.0,
+      1.0
+    ],
+    "final_state_grippers_lr": [
+      1.0,
+      0.0
+    ],
+    "final_action_grippers_lr": [
+      1.0,
+      0.0
+    ],
+    "release_start_frame": 147
+  },
+  {
+    "task": "place_bread_skillet",
+    "original_episode": 14,
+    "filtered_episode": 13,
+    "frames": 162,
+    "instructions": [
+      "Use the right arm to move the bread with rounded edges into the black-surfaced skillet with gray sides"
+    ],
+    "named_arms": [
+      "right"
+    ],
+    "joint_range_max_rad": {
+      "left": 2.1832480430603027,
+      "right": 2.179823875427246
+    },
+    "decision": "exclude_bread_arm_instruction_conflict",
+    "review_flags": [],
+    "bread_arm_from_release_and_task_source": "left",
+    "initial_grippers_lr": [
+      1.0,
+      1.0
+    ],
+    "final_state_grippers_lr": [
+      1.0,
+      0.0
+    ],
+    "final_action_grippers_lr": [
+      1.0,
+      0.0
+    ],
+    "release_start_frame": 143
+  },
+  {
+    "task": "place_bread_skillet",
+    "original_episode": 16,
+    "filtered_episode": 15,
+    "frames": 177,
+    "instructions": [
+      "Take the round bread with braided top with the left arm and drop into the skillet with black cooking surface"
+    ],
+    "named_arms": [
+      "left"
+    ],
+    "joint_range_max_rad": {
+      "left": 2.1626484394073486,
+      "right": 2.541510820388794
+    },
+    "decision": "exclude_bread_arm_instruction_conflict",
+    "review_flags": [],
+    "bread_arm_from_release_and_task_source": "right",
+    "initial_grippers_lr": [
+      1.0,
+      1.0
+    ],
+    "final_state_grippers_lr": [
+      0.0,
+      1.0
+    ],
+    "final_action_grippers_lr": [
+      0.0,
+      1.0
+    ],
+    "release_start_frame": 158
+  },
+  {
+    "task": "place_bread_skillet",
+    "original_episode": 17,
+    "filtered_episode": 16,
+    "frames": 173,
+    "instructions": [
+      "Use the left arm to take the light brown bread with ridges and move it into the hefty black skillet."
+    ],
+    "named_arms": [
+      "left"
+    ],
+    "joint_range_max_rad": {
+      "left": 2.20219087600708,
+      "right": 2.5365023612976074
+    },
+    "decision": "exclude_bread_arm_instruction_conflict",
+    "review_flags": [],
+    "bread_arm_from_release_and_task_source": "right",
+    "initial_grippers_lr": [
+      1.0,
+      1.0
+    ],
+    "final_state_grippers_lr": [
+      0.0,
+      1.0
+    ],
+    "final_action_grippers_lr": [
+      0.0,
+      1.0
+    ],
+    "release_start_frame": 154
+  },
+  {
+    "task": "place_bread_skillet",
+    "original_episode": 18,
+    "filtered_episode": 17,
+    "frames": 167,
+    "instructions": [
+      "Use the left arm to move the doughy and soft bread and set it into the medium-sized frying skillet."
+    ],
+    "named_arms": [
+      "left"
+    ],
+    "joint_range_max_rad": {
+      "left": 2.1625828742980957,
+      "right": 2.3537003993988037
+    },
+    "decision": "exclude_bread_arm_instruction_conflict",
+    "review_flags": [],
+    "bread_arm_from_release_and_task_source": "right",
+    "initial_grippers_lr": [
+      1.0,
+      1.0
+    ],
+    "final_state_grippers_lr": [
+      0.0,
+      1.0
+    ],
+    "final_action_grippers_lr": [
+      0.0,
+      1.0
+    ],
+    "release_start_frame": 148
+  },
+  {
+    "task": "place_bread_skillet",
+    "original_episode": 21,
+    "filtered_episode": 20,
+    "frames": 166,
+    "instructions": [
+      "Pick the soft brown bread with the left arm and set it in the medium-sized frying skillet"
+    ],
+    "named_arms": [
+      "left"
+    ],
+    "joint_range_max_rad": {
+      "left": 2.1783010959625244,
+      "right": 2.9024882316589355
+    },
+    "decision": "exclude_bread_arm_instruction_conflict",
+    "review_flags": [],
+    "bread_arm_from_release_and_task_source": "right",
+    "initial_grippers_lr": [
+      1.0,
+      1.0
+    ],
+    "final_state_grippers_lr": [
+      0.0,
+      1.0
+    ],
+    "final_action_grippers_lr": [
+      0.0,
+      1.0
+    ],
+    "release_start_frame": 147
+  },
+  {
+    "task": "place_bread_skillet",
+    "original_episode": 22,
+    "filtered_episode": 21,
+    "frames": 162,
+    "instructions": [
+      "Use the left arm to lift the golden crusted bread slice and place it into the round cooking pan."
+    ],
+    "named_arms": [
+      "left"
+    ],
+    "joint_range_max_rad": {
+      "left": 2.1629064083099365,
+      "right": 2.445160388946533
+    },
+    "decision": "exclude_bread_arm_instruction_conflict",
+    "review_flags": [],
+    "bread_arm_from_release_and_task_source": "right",
+    "initial_grippers_lr": [
+      1.0,
+      1.0
+    ],
+    "final_state_grippers_lr": [
+      0.0,
+      1.0
+    ],
+    "final_action_grippers_lr": [
+      0.0,
+      1.0
+    ],
+    "release_start_frame": 143
+  },
+  {
+    "task": "place_bread_skillet",
+    "original_episode": 24,
+    "filtered_episode": 23,
+    "frames": 170,
+    "instructions": [
+      "Lift the smooth loaf with rounded edges using the left arm and move it to the round cooking pan"
+    ],
+    "named_arms": [
+      "left"
+    ],
+    "joint_range_max_rad": {
+      "left": 2.2379422187805176,
+      "right": 2.233891010284424
+    },
+    "decision": "exclude_bread_arm_instruction_conflict",
+    "review_flags": [],
+    "bread_arm_from_release_and_task_source": "right",
+    "initial_grippers_lr": [
+      1.0,
+      1.0
+    ],
+    "final_state_grippers_lr": [
+      0.0,
+      1.0
+    ],
+    "final_action_grippers_lr": [
+      0.0,
+      1.0
+    ],
+    "release_start_frame": 151
+  },
+  {
+    "task": "place_bread_skillet",
+    "original_episode": 27,
+    "filtered_episode": 26,
+    "frames": 163,
+    "instructions": [
+      "Use the left arm to grab the bread block with light patches for the skillet for frying food"
+    ],
+    "named_arms": [
+      "left"
+    ],
+    "joint_range_max_rad": {
+      "left": 2.162806510925293,
+      "right": 2.330575466156006
+    },
+    "decision": "exclude_bread_arm_instruction_conflict",
+    "review_flags": [],
+    "bread_arm_from_release_and_task_source": "right",
+    "initial_grippers_lr": [
+      1.0,
+      1.0
+    ],
+    "final_state_grippers_lr": [
+      0.0,
+      1.0
+    ],
+    "final_action_grippers_lr": [
+      0.0,
+      1.0
+    ],
+    "release_start_frame": 144
+  },
+  {
+    "task": "place_bread_skillet",
+    "original_episode": 29,
+    "filtered_episode": 28,
+    "frames": 153,
+    "instructions": [
+      "Use the left arm to grab the light brown loaf with smooth sides for the solid dark-colored round pan"
+    ],
+    "named_arms": [
+      "left"
+    ],
+    "joint_range_max_rad": {
+      "left": 2.166574239730835,
+      "right": 2.269296407699585
+    },
+    "decision": "exclude_bread_arm_instruction_conflict",
+    "review_flags": [],
+    "bread_arm_from_release_and_task_source": "right",
+    "initial_grippers_lr": [
+      1.0,
+      1.0
+    ],
+    "final_state_grippers_lr": [
+      0.0,
+      1.0
+    ],
+    "final_action_grippers_lr": [
+      0.0,
+      1.0
+    ],
+    "release_start_frame": 134
+  },
+  {
+    "task": "place_bread_skillet",
+    "original_episode": 31,
+    "filtered_episode": 29,
+    "frames": 163,
+    "instructions": [
+      "Use the right arm to stick the bread with soft texture into the smooth round pan made of iron."
+    ],
+    "named_arms": [
+      "right"
+    ],
+    "joint_range_max_rad": {
+      "left": 2.277076244354248,
+      "right": 2.176225423812866
+    },
+    "decision": "exclude_bread_arm_instruction_conflict",
+    "review_flags": [],
+    "bread_arm_from_release_and_task_source": "left",
+    "initial_grippers_lr": [
+      1.0,
+      1.0
+    ],
+    "final_state_grippers_lr": [
+      1.0,
+      0.0
+    ],
+    "final_action_grippers_lr": [
+      1.0,
+      0.0
+    ],
+    "release_start_frame": 144
+  },
+  {
+    "task": "place_bread_skillet",
+    "original_episode": 33,
+    "filtered_episode": 31,
+    "frames": 165,
+    "instructions": [
+      "Place the bread with split top into the round cooking pan using the right arm"
+    ],
+    "named_arms": [
+      "right"
+    ],
+    "joint_range_max_rad": {
+      "left": 2.0555989742279053,
+      "right": 2.174884557723999
+    },
+    "decision": "exclude_bread_arm_instruction_conflict",
+    "review_flags": [],
+    "bread_arm_from_release_and_task_source": "left",
+    "initial_grippers_lr": [
+      1.0,
+      1.0
+    ],
+    "final_state_grippers_lr": [
+      1.0,
+      0.0
+    ],
+    "final_action_grippers_lr": [
+      1.0,
+      0.0
+    ],
+    "release_start_frame": 146
+  },
+  {
+    "task": "place_bread_skillet",
+    "original_episode": 34,
+    "filtered_episode": 32,
+    "frames": 162,
+    "instructions": [
+      "Use the left arm to take the cuboid bread and move it into the skillet with looped handle."
+    ],
+    "named_arms": [
+      "left"
+    ],
+    "joint_range_max_rad": {
+      "left": 2.16255259513855,
+      "right": 2.343459129333496
+    },
+    "decision": "exclude_bread_arm_instruction_conflict",
+    "review_flags": [],
+    "bread_arm_from_release_and_task_source": "right",
+    "initial_grippers_lr": [
+      1.0,
+      1.0
+    ],
+    "final_state_grippers_lr": [
+      0.0,
+      1.0
+    ],
+    "final_action_grippers_lr": [
+      0.0,
+      1.0
+    ],
+    "release_start_frame": 143
+  },
+  {
+    "task": "place_bread_skillet",
+    "original_episode": 37,
+    "filtered_episode": 35,
+    "frames": 177,
+    "instructions": [
+      "Grab the bread with rounded edges using the left arm and place it in the flat-bottomed skillet with long handle"
+    ],
+    "named_arms": [
+      "left"
+    ],
+    "joint_range_max_rad": {
+      "left": 2.1675500869750977,
+      "right": 2.398077964782715
+    },
+    "decision": "exclude_bread_arm_instruction_conflict",
+    "review_flags": [],
+    "bread_arm_from_release_and_task_source": "right",
+    "initial_grippers_lr": [
+      1.0,
+      1.0
+    ],
+    "final_state_grippers_lr": [
+      0.0,
+      1.0
+    ],
+    "final_action_grippers_lr": [
+      0.0,
+      1.0
+    ],
+    "release_start_frame": 158
+  },
+  {
+    "task": "place_bread_skillet",
+    "original_episode": 41,
+    "filtered_episode": 39,
+    "frames": 167,
+    "instructions": [
+      "Pick the smooth loaf with rounded edges up using the right arm and drop it in the hefty black skillet."
+    ],
+    "named_arms": [
+      "right"
+    ],
+    "joint_range_max_rad": {
+      "left": 2.1985023021698,
+      "right": 2.175896167755127
+    },
+    "decision": "exclude_bread_arm_instruction_conflict",
+    "review_flags": [],
+    "bread_arm_from_release_and_task_source": "left",
+    "initial_grippers_lr": [
+      1.0,
+      1.0
+    ],
+    "final_state_grippers_lr": [
+      1.0,
+      0.0
+    ],
+    "final_action_grippers_lr": [
+      1.0,
+      0.0
+    ],
+    "release_start_frame": 148
+  },
+  {
+    "task": "place_bread_skillet",
+    "original_episode": 42,
+    "filtered_episode": 40,
+    "frames": 168,
+    "instructions": [
+      "Move the light brown loaf with smooth sides to the flat-bottomed black cast iron skillet using the left arm"
+    ],
+    "named_arms": [
+      "left"
+    ],
+    "joint_range_max_rad": {
+      "left": 2.17466139793396,
+      "right": 2.532458782196045
+    },
+    "decision": "exclude_bread_arm_instruction_conflict",
+    "review_flags": [],
+    "bread_arm_from_release_and_task_source": "right",
+    "initial_grippers_lr": [
+      1.0,
+      1.0
+    ],
+    "final_state_grippers_lr": [
+      0.0,
+      1.0
+    ],
+    "final_action_grippers_lr": [
+      0.0,
+      1.0
+    ],
+    "release_start_frame": 149
+  },
+  {
+    "task": "place_bread_skillet",
+    "original_episode": 46,
+    "filtered_episode": 44,
+    "frames": 167,
+    "instructions": [
+      "Use the right arm to grab the bread with split top for the metal skillet"
+    ],
+    "named_arms": [
+      "right"
+    ],
+    "joint_range_max_rad": {
+      "left": 2.2068734169006348,
+      "right": 2.1760895252227783
+    },
+    "decision": "exclude_bread_arm_instruction_conflict",
+    "review_flags": [],
+    "bread_arm_from_release_and_task_source": "left",
+    "initial_grippers_lr": [
+      1.0,
+      1.0
+    ],
+    "final_state_grippers_lr": [
+      1.0,
+      0.0
+    ],
+    "final_action_grippers_lr": [
+      1.0,
+      0.0
+    ],
+    "release_start_frame": 148
+  },
+  {
+    "task": "place_bread_skillet",
+    "original_episode": 47,
+    "filtered_episode": 45,
+    "frames": 169,
+    "instructions": [
+      "Use the right arm to pick the small golden baked bread for the flat-bottomed skillet with long handle"
+    ],
+    "named_arms": [
+      "right"
+    ],
+    "joint_range_max_rad": {
+      "left": 2.160468339920044,
+      "right": 2.17608380317688
+    },
+    "decision": "exclude_bread_arm_instruction_conflict",
+    "review_flags": [],
+    "bread_arm_from_release_and_task_source": "left",
+    "initial_grippers_lr": [
+      1.0,
+      1.0
+    ],
+    "final_state_grippers_lr": [
+      1.0,
+      0.0
+    ],
+    "final_action_grippers_lr": [
+      1.0,
+      0.0
+    ],
+    "release_start_frame": 150
+  },
+  {
+    "task": "place_bread_skillet",
+    "original_episode": 48,
+    "filtered_episode": 46,
+    "frames": 153,
+    "instructions": [
+      "Pick the smooth crusty small bread up using the right arm and drop it in the flat-bottomed skillet with long handle."
+    ],
+    "named_arms": [
+      "right"
+    ],
+    "joint_range_max_rad": {
+      "left": 2.030360221862793,
+      "right": 2.176133394241333
+    },
+    "decision": "exclude_bread_arm_instruction_conflict",
+    "review_flags": [],
+    "bread_arm_from_release_and_task_source": "left",
+    "initial_grippers_lr": [
+      1.0,
+      1.0
+    ],
+    "final_state_grippers_lr": [
+      1.0,
+      0.0
+    ],
+    "final_action_grippers_lr": [
+      1.0,
+      0.0
+    ],
+    "release_start_frame": 134
+  }
+]

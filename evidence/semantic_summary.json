@@ -1,0 +1,12 @@
+{
+  "episodes_checked": 2478,
+  "tasks": 50,
+  "episodes_with_explicit_arm": 731,
+  "single_named_arm": 609,
+  "multi_named_arm": 122,
+  "bread_checked": 48,
+  "additional_exclusions": 23,
+  "additional_excluded_frames": 3805,
+  "static_named_arm_review_count": 0,
+  "new_cloud_credits": 0
+}
