@@ -1,0 +1,21 @@
+test_each_transform_handles_small_images (test_training_preparation.AugmentationTests.test_each_transform_handles_small_images) ... ok
+test_float_input_stays_bounded (test_training_preparation.AugmentationTests.test_float_input_stays_bounded) ... ok
+test_occlusion_cannot_overwrite_protected_center (test_training_preparation.AugmentationTests.test_occlusion_cannot_overwrite_protected_center) ... ok
+test_original_branch_is_exact (test_training_preparation.AugmentationTests.test_original_branch_is_exact) ... ok
+test_probability_is_seeded_and_original_fraction (test_training_preparation.AugmentationTests.test_probability_is_seeded_and_original_fraction) ... ok
+test_replay_frames_views_dtype_and_input_unchanged (test_training_preparation.AugmentationTests.test_replay_frames_views_dtype_and_input_unchanged) ... ok
+test_partial_checkpoint_rejected_and_corruption_detected (test_training_preparation.CheckpointTests.test_partial_checkpoint_rejected_and_corruption_detected) ... ok
+test_wrong_rank_or_stats_rejected (test_training_preparation.CheckpointTests.test_wrong_rank_or_stats_rejected) ... ok
+test_deadline_releases_with_ssh_unavailable (test_training_preparation.ReleaseTests.test_deadline_releases_with_ssh_unavailable) ... ok
+test_delete_network_error_retries (test_training_preparation.ReleaseTests.test_delete_network_error_retries) ... ok
+test_finished_run_seals_receipt_and_releases (test_training_preparation.ReleaseTests.test_finished_run_seals_receipt_and_releases) ... ok
+test_terminating_is_not_released (test_training_preparation.ReleaseTests.test_terminating_is_not_released) ... ok
+test_unknown_status_does_not_silently_claim_release (test_training_preparation.ReleaseTests.test_unknown_status_does_not_silently_claim_release) ... ok
+test_wrong_instance_not_deleted (test_training_preparation.ReleaseTests.test_wrong_instance_not_deleted) ... ok
+test_final_stats_have_native_keys_and_dimensions (test_training_preparation.StatisticsTests.test_final_stats_have_native_keys_and_dimensions) ... ok
+test_weighted_statistics_match_explicit_padded_chunks (test_training_preparation.StatisticsTests.test_weighted_statistics_match_explicit_padded_chunks) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.108s
+
+OK

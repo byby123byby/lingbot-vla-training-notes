@@ -1,0 +1,72 @@
+{
+  "observed_date": "2026-10-24",
+  "source_snapshots": {
+    "lingbotvla__data__vla_data__README.md": "8e6cb71b5e74fea590727d4c4deab11a32092a50fc2aae72de5dec9a0c45673b",
+    "lingbotvla__data__vla_data__multi_vla_dataset.py": "c484c0c10236b35eb133fdc3cb9488fe7c0df0bde4830cdf545b96d3f7de5085",
+    "cli-instances.md": "db201c63e423a990519fa71bb3ab7702aba8cc5bd9cafcb9a56d23e348ec3fd2",
+    "cli-overview.md": "d49bd87611de0dbba629df9f23050a0789ac97e2ea29ebc02e9b04dd44abf84b",
+    "CangLing-Cerulean__RobustTwin-VLA-README.md": "1e029ae3e8c08abc30bf1f4e23200f74aaf5b0b19813877fc0e2b18c53986056",
+    "EclipseaHime017__lingbot-vla-robotwin-README.md": "20c433649b9cf7ad03cccc0846e09d7a1954f8c0605b1c5664425b39081bf583",
+    "radeon-docs-tree.json": "0bdc5bce768765b7b869f9bc68165d32755e28263e15e2bab9d223cb29ae856e",
+    "lingbotvla__data__vla_data__utils.py": "cfbd6e08dda8f7a3a462c50f6c230c372189f8148b3ffe6a962e240dccd86a16",
+    "zyiguo__lingbot-vla-mi300x-practice-README.md": "3656f90f9312a131720bed143aaf6ce10f9c02393b110bb760ea701d2cf40728",
+    "radeon-instances.md": "ea99b296a4e92764b267bdf39284a4b56511e9254d99a0683ae96c543b8b707b",
+    "sxh-kk__LingBot-README.md": "d6ada6899a3e64732141b4bb790a5cc8dd8f58b54f7ab1a35e069511a502a799",
+    "radeon-account.md": "6864b301b2b546b9c47a10081d38ea71cae248c88364aa3e8483e9ac90002ace",
+    "zhao-zetong__robotwin-training-README.md": "8e66dbd1311e957f63d9370fa9fb34ac0697e17b59621dc4572f84d1fd168fb1",
+    "cli-authentication.md": "1b10c7e3c6e2b68da3cfb9268134e0ade8f4c6f7b0e7adc57c1a0b7b1cdb0255",
+    "radeon-overview.md": "fe52d67833e4c9f2804dceed8f95f7a597b805483f728ea061ed977a673d49cc",
+    "radeon-templates.md": "2307acb6b03bbc1f3b6a94cb01a6a1d356f4e9b6223471f449d7e3254d16a64d",
+    "efficient-repo.json": "19f64baa6433dffbd551576fbe47812ba7db5b4d7160e307a77067da01996a6e",
+    "lingbotvla__checkpoint__checkpointer.py": "da48ecca6d78e7982f73018179b50a99b9d211bdebf87c200443b1f51466d8ca",
+    "configs__robot_configs__robotwin.yaml": "2c2a26509fc9662a8ada64adaa7fa959627dd6dadc6b48b680c4285da2d8ffd8",
+    "radeon-authentication.md": "63a8c262818de389446fd99e440adf8ea78e16e21ce162bd2a415d610326375a",
+    "cli-automation.md": "d820b372ce4282f2a075a44a1cad70a8b52e697258c287d730ab28eec93d2da4",
+    "owls-readme.md": "15c52303cc2fc28ecc6fb1d30c7bdcacc27a62aedeb8d1811d449e08a3dce248",
+    "lingbotvla__data__vla_data__base_dataset.py": "3d1550e644778ab4ec15c22fae4a9ed799ff5b0f27d7d81b83b218d2c777da65",
+    "lingbotvla__utils__arguments.py": "60acacba51cbe72506360b0b2d697603f8c4aea2ad7dccfdef232e5aaf905f09",
+    "github-search.json": "1b6d062a7cc896bcc1c0831333e92a6bbbdb3b81b087a8534dd77f9a4fc10f20",
+    "Coola666__lingbot-vla-robotwin-pipeline-README.md": "6045bfd7f7eeae61a2a4387663695dc94ae079869076fd3404f1b4165080c003",
+    "lingbotvla__utils__normalize.py": "64020713950bcb27b3589c12219292ed1859a090c986c69fdc5b62e053fd5737",
+    "AlexDrives__Lingbot-RoboTwin-README.md": "fc982cafb8d9228eacc1cac0808646c63be7677ec981367c0f4fa15afe7c1400",
+    "cli-install.md": "bdd9f47debe59f336548cfe89ab6a6524550538e7753e3a721e396b628b7ab6a",
+    "robustwin-repo.json": "61cfbd50f8b824c4d46e50e60e630aa8cd6a17d83dbe592c71d0ce63af34943d",
+    "residual-readme.md": "47bb8f47ecec8d8c5333420ab4bbc934ca2fdc52ffbadac28bbcfac0022b620b"
+  },
+  "queried_routes": [
+    "GitHub repository search lingbot robotwin",
+    "web lingbot augmentation clean success",
+    "author HuggingFace model cards and linked GitHub",
+    "Radeon Cloud API CLI docs and PyPI package",
+    "PyTorch distributed checkpoint preemption",
+    "negative results in candidate READMEs"
+  ],
+  "plan_queries_not_all_executed": true,
+  "known_seeds_not_novel": [
+    "Robbyant/lingbot-vla-v2",
+    "ZiguanWang/Robotwin-radeon-cloud"
+  ],
+  "successor_checks": [
+    {
+      "anchor": "LingBot-VLA v2",
+      "state": "found",
+      "source": "https://huggingface.co/docs/lerobot/main/en/lingbot_vla_v2"
+    },
+    {
+      "anchor": "Radeon Cloud",
+      "state": "found",
+      "source": "https://github.com/AMD-AIM/radeon-cloud-docs",
+      "package_version": "amd-oneclick-sdk 1.0.2"
+    },
+    {
+      "anchor": "PyTorch DCP",
+      "state": "found",
+      "source": "https://docs.pytorch.org/docs/main/distributed/checkpoint.html"
+    }
+  ],
+  "blocked": [
+    "HAOTianGa03/lingbot-robotwin-clean50 (private per model card; fetch unavailable)",
+    "lingbot-ai/lingbot-vla-v2 (fetch unavailable)"
+  ],
+  "stop_reason": "bounded project-specific discovery; implementation prioritized; not search saturation"
+}

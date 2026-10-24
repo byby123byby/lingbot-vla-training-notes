@@ -1,0 +1,11 @@
+{
+  "patched_upstream_parse": true,
+  "all_three_save_paths_sealed": true,
+  "current_future_and_teacher_alignment": true,
+  "inputs_unchanged": true,
+  "official_norm_schema_loads": true,
+  "official_normalizer_roundtrip": true,
+  "weighted_histogram_matches_official_single_batch_toy": true,
+  "gpu_training_performed": false,
+  "cloud_calls": 0
+}
