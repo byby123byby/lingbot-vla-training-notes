@@ -1,0 +1,29 @@
+--- work/official-baseline/eval_policy_xpolicylab.py	2026-10-24 01:13:07
++++ outputs/eval_policy_smoke_retry.py	2026-10-24 01:15:54
+@@ -21,7 +21,7 @@
+ import yaml
+ 
+ 
+-ROBOTWIN_ROOT = Path(__file__).resolve().parents[1]
++ROBOTWIN_ROOT = Path("/RoboTwin")
+ DEFAULT_XPOLICYLAB_ROOT = ROBOTWIN_ROOT / "XPolicyLab"
+ TASK_CONFIG_ROOT = ROBOTWIN_ROOT / "env_cfg" / "task_config"
+ 
+@@ -879,11 +879,13 @@
+         args["render_freq"] = render_freq
+         try:
+             task_env.setup_demo(now_ep_num=now_id, seed=now_seed, is_test=True, **args)
+-        except UnStableError:
+-            task_env.close_env()
+-            if not expert_check:
+-                succ_seed -= 1
++        except UnStableError as exc:
++            print(f"SCENE_SETUP_FAILED seed={now_seed}: {exc}", flush=True)
++            task_env.close_env()
++            succ_seed -= 1
+             now_seed += 1
++            if now_seed - st_seed >= 10:
++                raise RuntimeError("No valid scene in 10 seeds") from exc
+             continue
+ 
+         instruction = build_instruction(args, episode_info, instruction_type, test_num)
