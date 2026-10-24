@@ -1,0 +1,48 @@
+{
+  "authorized_total_credits": 32,
+  "previous_review_reserved": 1,
+  "remaining33_review_observed": 1,
+  "conservative_available": 30,
+  "account_balance_claimed": false,
+  "rate_per_gpu_started_hour": 1,
+  "rounding_source": "Current China Radeon Cloud UI explicitly says 按开始的每个小时计费; official generic GPU-hour guide does not specify rounding.",
+  "current_ui_gpu_options": [
+    1,
+    8
+  ],
+  "dev_pool_auto_destroy": "not available in observed UI",
+  "scenarios": [
+    {
+      "gpu_count": 8,
+      "available_in_observed_ui": true,
+      "billed_hours_ceiling": 3,
+      "credits_ceiling": 24,
+      "unused_credits": 6,
+      "setup_minutes": 15,
+      "save_and_export_minutes": 30,
+      "release_margin_minutes": 15,
+      "net_training_hours": 2,
+      "reference_seconds_per_optimizer_step": 24.682,
+      "estimated_steps_without_extra_overhead": 291,
+      "configured_step_cap": 250,
+      "target_compute_minutes": 102.84,
+      "estimate_type": "Reference repository short capacity test; not our training measurement; rich augmentation/storage can reduce throughput."
+    },
+    {
+      "gpu_count": 4,
+      "available_in_observed_ui": false,
+      "billed_hours_ceiling": 7,
+      "credits_ceiling": 28,
+      "unused_credits": 2,
+      "setup_minutes": 15,
+      "save_and_export_minutes": 30,
+      "release_margin_minutes": 15,
+      "net_training_hours": 6,
+      "reference_seconds_per_optimizer_step": 41.392,
+      "estimated_steps_without_extra_overhead": 521,
+      "configured_step_cap": 500,
+      "target_compute_minutes": 344.93,
+      "estimate_type": "Reference repository short capacity test; not our training measurement; rich augmentation/storage can reduce throughput."
+    }
+  ]
+}
