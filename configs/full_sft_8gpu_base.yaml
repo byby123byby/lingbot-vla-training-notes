@@ -1,6 +1,6 @@
 # PREPARED, NOT RUN. Native LingBot/AMD configuration.
-# image_augment=true currently enables upstream color augmentation ONLY.
-# Rich augmentation is specified separately; it is not implemented by this flag.
+# Strong augmentation requires scripts/training/install_runtime.py on the pinned source.
+# run_budgeted.py refuses to execute if the hook is absent.
 # lr_min=lr keeps this short budget slice at the selected stage learning rate.
 # max_steps is not a wall-clock or cloud-credit limit. See README.md.
 data:

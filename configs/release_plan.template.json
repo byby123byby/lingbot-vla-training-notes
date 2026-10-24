@@ -1,0 +1,17 @@
+{
+  "base_url": "https://developer.amd.com.cn/radeon",
+  "account": "lingbot-china",
+  "gpu_count": 8,
+  "credits_ceiling": 24,
+  "billing_start_epoch": 0,
+  "persistent_workspace_confirmed": false,
+  "exclusive_instance_lease": false,
+  "ssh_alias": "lingbot-training",
+  "run_dir": "/workspace/runtime/outputs/full_sft_clean2455_8gpu_base",
+  "expected_instance": {
+    "instance_id": null,
+    "ssh_host": null,
+    "ssh_port": null
+  },
+  "norm_sha256": "2e3c20f57e69c6aa3ebc686365110aba7d37580640f2ada1306e15238ffc51a1"
+}
