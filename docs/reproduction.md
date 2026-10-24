@@ -25,7 +25,7 @@ Python 数据处理主要依赖 numpy、pyarrow、Pillow 和 PyAV；LeRobot 读�
 
 `configs/` 中是准备好的原生 YAML、续训模板、预算与独立强增广规格。它们不触发训练、云实例创建或付费。阅读该目录说明后再决定执行。
 
-尚缺：完整强增广接入、最终 norm_stats、足够的持久化存储、外部时间截止与实例释放流程。当前自己的训练尚未开始，续训模板使用明确占位符；只允许填入本项目未来产出的 checkpoint。
+强增广接入、最终 norm_stats 和外部保存释放控制器已补齐并通过本地检查，见 [操作流程](training-readiness.md)。当前自己的训练尚未开始；未来执行仍需中国站 RCC 授权、至少 85 GiB 可用 PVC 与在实例外运行的控制器。HF 续训模板只允许填入自己产出的 checkpoint；完整 DCP 恢复使用 run_budgeted.py --resume。
 
 ## 公开内容处理
 

@@ -13,7 +13,9 @@
 | E06 | 已执行 | 122 条多臂指令角色/事件核对 | [汇总](../evidence/multi_arm_summary.json)、[4 条软问题](../evidence/multi_arm_soft_flags.json) |
 | P01 | 仅准备 | 8 卡基座全参数训练，预算段 250 步 | [原生 YAML](../configs/full_sft_8gpu_base.yaml) |
 | P02 | 仅模板 | 自己已训练的合规模型的 2e-5 续训 | [续训模板](../configs/full_sft_8gpu_continue.template.yaml) |
-| P03 | 规格已记录，未接入 | 强图像增广 | [配方](../configs/augmentation_recipe.json) |
+| P03 | 本地接入和检查完成，未云训 | 强图像增广、teacher 对齐 | [配方](../configs/augmentation_recipe.json)、[集成检查](../evidence/training_integration_checks.json) |
+| E07 | CPU 已计算 | 筛后归一化统计，含动作块末尾填充 | [统计报告](../configs/norm_stats/norm_report.json) |
+| P04 | 离线模拟通过，未调用云 API | DCP 保存、恢复校验与 RCC 释放控制 | [操作流程](training-readiness.md)、[测试记录](../evidence/training_preparation_tests.txt) |
 
 ## 当前冻结的数据选择
 
