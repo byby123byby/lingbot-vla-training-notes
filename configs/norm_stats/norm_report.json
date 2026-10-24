@@ -1,0 +1,413 @@
+{
+  "tasks": 50,
+  "episodes": 2455,
+  "frames": 540182,
+  "action_chunk_size": 50,
+  "action_weighted_count": 27009100,
+  "method": "official feature mapping; repeat-last action chunk; global fixed 5000-bin weighted histogram",
+  "upstream_equivalence": "same population and mapping, histogram quantiles may differ from upstream adaptive rebinning",
+  "norm_sha256": "2e3c20f57e69c6aa3ebc686365110aba7d37580640f2ada1306e15238ffc51a1",
+  "selection_sha256": "7d40af0511e09c0c5ffd2f4dad1ab79b6984d19580bbda52513f847b06f67fa8",
+  "datasets": [
+    {
+      "task": "adjust_bottle_joint_v30",
+      "episodes": 50,
+      "frames": 7188,
+      "parquet_sha256": {
+        "filtered_lerobot/adjust_bottle_joint_v30/data/chunk-000/file-000.parquet": "a711a61b4aa92a60bfb0587b54261525b34624e2cbbf22bdce04e3f5adb68049"
+      }
+    },
+    {
+      "task": "beat_block_hammer_joint_v30",
+      "episodes": 50,
+      "frames": 5682,
+      "parquet_sha256": {
+        "filtered_lerobot/beat_block_hammer_joint_v30/data/chunk-000/file-000.parquet": "1d46b58e05df620c9143b0bd90430777b11d652fc6513a4a92d955688f357661"
+      }
+    },
+    {
+      "task": "blocks_ranking_rgb_joint_v30",
+      "episodes": 50,
+      "frames": 23041,
+      "parquet_sha256": {
+        "filtered_lerobot/blocks_ranking_rgb_joint_v30/data/chunk-000/file-000.parquet": "c6a1a8dab3085f5068ac0e65df675a200a16dbcffe7123afa060974bd197b08a"
+      }
+    },
+    {
+      "task": "blocks_ranking_size_joint_v30",
+      "episodes": 50,
+      "frames": 23170,
+      "parquet_sha256": {
+        "filtered_lerobot/blocks_ranking_size_joint_v30/data/chunk-000/file-000.parquet": "7b7c5fb2672ff9bdcbcf9efc34fa3fef06b9fde0b16131eef9f694b8557f43ce"
+      }
+    },
+    {
+      "task": "click_alarmclock_joint_v30",
+      "episodes": 50,
+      "frames": 4252,
+      "parquet_sha256": {
+        "filtered_lerobot/click_alarmclock_joint_v30/data/chunk-000/file-000.parquet": "cb6447bcf560772d9040ba4f2c883a24aec8875a9619b8a78763151e09418e05"
+      }
+    },
+    {
+      "task": "click_bell_joint_v30",
+      "episodes": 50,
+      "frames": 3855,
+      "parquet_sha256": {
+        "filtered_lerobot/click_bell_joint_v30/data/chunk-000/file-000.parquet": "ef5bebfaf8f8dc5f2b8117784fee6f64f800722b1f330222f4d7882a2fec56e5"
+      }
+    },
+    {
+      "task": "dump_bin_bigbin_joint_v30",
+      "episodes": 50,
+      "frames": 12122,
+      "parquet_sha256": {
+        "filtered_lerobot/dump_bin_bigbin_joint_v30/data/chunk-000/file-000.parquet": "8bfd3e7ff5a16cf4377d382ff0f0579a56dbc33f2a15962a39dee23420a49028"
+      }
+    },
+    {
+      "task": "grab_roller_joint_v30",
+      "episodes": 50,
+      "frames": 4728,
+      "parquet_sha256": {
+        "filtered_lerobot/grab_roller_joint_v30/data/chunk-000/file-000.parquet": "aeb21c21b3832b7d4e0dea5edff9d6f8916b2f53ac5c34ea8b4201edcd5c3539"
+      }
+    },
+    {
+      "task": "handover_block_joint_v30",
+      "episodes": 50,
+      "frames": 14084,
+      "parquet_sha256": {
+        "filtered_lerobot/handover_block_joint_v30/data/chunk-000/file-000.parquet": "0708c4c1a1ce34a01a925095f153158f9a9d821381c6f1b6f5185b5b6bae4528"
+      }
+    },
+    {
+      "task": "handover_mic_joint_v30",
+      "episodes": 50,
+      "frames": 11092,
+      "parquet_sha256": {
+        "filtered_lerobot/handover_mic_joint_v30/data/chunk-000/file-000.parquet": "e40ecdb4618cc143b5e01dc5bd684255d9375c0caf21578319e94036c8cddce2"
+      }
+    },
+    {
+      "task": "hanging_mug_joint_v30",
+      "episodes": 49,
+      "frames": 16535,
+      "parquet_sha256": {
+        "filtered_lerobot/hanging_mug_joint_v30/data/chunk-000/file-000.parquet": "49811ed64bca436e220e140e213fa5afbf6a9bd2b45c9d9d558bee467534c7e2"
+      }
+    },
+    {
+      "task": "lift_pot_joint_v30",
+      "episodes": 50,
+      "frames": 5554,
+      "parquet_sha256": {
+        "filtered_lerobot/lift_pot_joint_v30/data/chunk-000/file-000.parquet": "3855045d18d303b563099a317eb4f1429fa9ac0bd0d678ff9e96349457840a73"
+      }
+    },
+    {
+      "task": "move_can_pot_joint_v30",
+      "episodes": 50,
+      "frames": 7568,
+      "parquet_sha256": {
+        "filtered_lerobot/move_can_pot_joint_v30/data/chunk-000/file-000.parquet": "37539630c131ca2f0185ec230fcc63d9f9d361fd57f1748d6dcc2f9fd2b22719"
+      }
+    },
+    {
+      "task": "move_pillbottle_pad_joint_v30",
+      "episodes": 50,
+      "frames": 7345,
+      "parquet_sha256": {
+        "filtered_lerobot/move_pillbottle_pad_joint_v30/data/chunk-000/file-000.parquet": "a0fa9185496edf8106f6997dafe4e207c87949a25f32c3a610996adb5d93db3f"
+      }
+    },
+    {
+      "task": "move_playingcard_away_joint_v30",
+      "episodes": 50,
+      "frames": 5884,
+      "parquet_sha256": {
+        "filtered_lerobot/move_playingcard_away_joint_v30/data/chunk-000/file-000.parquet": "c780f1f8c017186c06690d176f02c9fab91f044f9a518c3a4d932ad4b3a66fdf"
+      }
+    },
+    {
+      "task": "move_stapler_pad_joint_v30",
+      "episodes": 50,
+      "frames": 7749,
+      "parquet_sha256": {
+        "filtered_lerobot/move_stapler_pad_joint_v30/data/chunk-000/file-000.parquet": "689dee03a6cd9efc1f6b8bcacb3d1831020dc30b074e5a8867551f06d8a9c719"
+      }
+    },
+    {
+      "task": "open_laptop_joint_v30",
+      "episodes": 50,
+      "frames": 10412,
+      "parquet_sha256": {
+        "filtered_lerobot/open_laptop_joint_v30/data/chunk-000/file-000.parquet": "e9ea142efb0ae081941eb78e498e2dbc9ec3ceb1a10fb5e2e8aeaea351ef66e4"
+      }
+    },
+    {
+      "task": "open_microwave_joint_v30",
+      "episodes": 50,
+      "frames": 24333,
+      "parquet_sha256": {
+        "filtered_lerobot/open_microwave_joint_v30/data/chunk-000/file-000.parquet": "18a56bb9b6de7e1da37841685c79d1f6c020dd297c4b6d39e113eb734dcdc891"
+      }
+    },
+    {
+      "task": "pick_diverse_bottles_joint_v30",
+      "episodes": 50,
+      "frames": 6060,
+      "parquet_sha256": {
+        "filtered_lerobot/pick_diverse_bottles_joint_v30/data/chunk-000/file-000.parquet": "f18e672f3479b17ece924eaaebe624e037448f8adfb60937d2dc6631997104a1"
+      }
+    },
+    {
+      "task": "pick_dual_bottles_joint_v30",
+      "episodes": 50,
+      "frames": 6129,
+      "parquet_sha256": {
+        "filtered_lerobot/pick_dual_bottles_joint_v30/data/chunk-000/file-000.parquet": "d0eeb43ee1f1657a2ccbad8d03d13d756cdad727ae8e08f40f1cdbb7425457f8"
+      }
+    },
+    {
+      "task": "place_a2b_left_joint_v30",
+      "episodes": 50,
+      "frames": 7451,
+      "parquet_sha256": {
+        "filtered_lerobot/place_a2b_left_joint_v30/data/chunk-000/file-000.parquet": "2815580e15eb783d3d1d6635addac09943346e4beb5779613552b7178df24e8d"
+      }
+    },
+    {
+      "task": "place_a2b_right_joint_v30",
+      "episodes": 50,
+      "frames": 7349,
+      "parquet_sha256": {
+        "filtered_lerobot/place_a2b_right_joint_v30/data/chunk-000/file-000.parquet": "6b889f18a827fd19f5ff10f3dfc4edeff570fb967f140f4dc82f6113bdf15d04"
+      }
+    },
+    {
+      "task": "place_bread_basket_joint_v30",
+      "episodes": 50,
+      "frames": 11956,
+      "parquet_sha256": {
+        "filtered_lerobot/place_bread_basket_joint_v30/data/chunk-000/file-000.parquet": "7537f9e0b1e37c08ecc79b1560f3a4e76f43751be9b31c53d6011b6b55e6bfd7"
+      }
+    },
+    {
+      "task": "place_bread_skillet_joint_v30",
+      "episodes": 25,
+      "frames": 4107,
+      "parquet_sha256": {
+        "filtered_lerobot/place_bread_skillet_joint_v30/data/chunk-000/file-000.parquet": "aa6e6f7c3fa779ca1226357f9efe63850d6c8884c1b37aa62da2c15df0e324d7"
+      }
+    },
+    {
+      "task": "place_burger_fries_joint_v30",
+      "episodes": 50,
+      "frames": 12046,
+      "parquet_sha256": {
+        "filtered_lerobot/place_burger_fries_joint_v30/data/chunk-000/file-000.parquet": "faee485e52e7b1db20cc93b485a75dd4ee67ef2edda8626efbd31054ef18917f"
+      }
+    },
+    {
+      "task": "place_can_basket_joint_v30",
+      "episodes": 45,
+      "frames": 11280,
+      "parquet_sha256": {
+        "filtered_lerobot/place_can_basket_joint_v30/data/chunk-000/file-000.parquet": "d9bb1a49ebe63ba334790c949c03f8ba67113680fe4a155648f7da5de5871090"
+      }
+    },
+    {
+      "task": "place_cans_plasticbox_joint_v30",
+      "episodes": 50,
+      "frames": 14375,
+      "parquet_sha256": {
+        "filtered_lerobot/place_cans_plasticbox_joint_v30/data/chunk-000/file-000.parquet": "51eb9fb4dfa872e6a31d44c62b773efb69806c34c2b3c39ddab3dc8ac9781ae0"
+      }
+    },
+    {
+      "task": "place_container_plate_joint_v30",
+      "episodes": 50,
+      "frames": 7934,
+      "parquet_sha256": {
+        "filtered_lerobot/place_container_plate_joint_v30/data/chunk-000/file-000.parquet": "e1b9af93e17ed0c8cca1fc31ac5b87b17e5d8d74be110f34a1821329559c3332"
+      }
+    },
+    {
+      "task": "place_dual_shoes_joint_v30",
+      "episodes": 50,
+      "frames": 11510,
+      "parquet_sha256": {
+        "filtered_lerobot/place_dual_shoes_joint_v30/data/chunk-000/file-000.parquet": "010d0bebbed9466a82a1b0d0472794c06ed5f92d0a7034e49667bf6c65deae10"
+      }
+    },
+    {
+      "task": "place_empty_cup_joint_v30",
+      "episodes": 50,
+      "frames": 8617,
+      "parquet_sha256": {
+        "filtered_lerobot/place_empty_cup_joint_v30/data/chunk-000/file-000.parquet": "7bd99a49835911830d724641b16d9fd4b75fcaa4981adc015c79264a95ea91de"
+      }
+    },
+    {
+      "task": "place_fan_joint_v30",
+      "episodes": 50,
+      "frames": 7358,
+      "parquet_sha256": {
+        "filtered_lerobot/place_fan_joint_v30/data/chunk-000/file-000.parquet": "2a0ef8c3cf2f98e5aaef1e7723c7bf1615408ad384a3d840d6421b2ad1a2226d"
+      }
+    },
+    {
+      "task": "place_mouse_pad_joint_v30",
+      "episodes": 50,
+      "frames": 7531,
+      "parquet_sha256": {
+        "filtered_lerobot/place_mouse_pad_joint_v30/data/chunk-000/file-000.parquet": "538b85df0888cb7f8e81abe62651fbf95a2d46e478f608186a598f36eeb44ee4"
+      }
+    },
+    {
+      "task": "place_object_basket_joint_v30",
+      "episodes": 49,
+      "frames": 12006,
+      "parquet_sha256": {
+        "filtered_lerobot/place_object_basket_joint_v30/data/chunk-000/file-000.parquet": "7c08e01af2757dde5e1a2f73667a04b44b0745407e07d9f3db832a78cc5190dd"
+      }
+    },
+    {
+      "task": "place_object_scale_joint_v30",
+      "episodes": 50,
+      "frames": 7266,
+      "parquet_sha256": {
+        "filtered_lerobot/place_object_scale_joint_v30/data/chunk-000/file-000.parquet": "ee09949ceaece0fb3df828c1fdb67ec6544cea9d4b2779eb5c99528a68948c24"
+      }
+    },
+    {
+      "task": "place_object_stand_joint_v30",
+      "episodes": 50,
+      "frames": 6952,
+      "parquet_sha256": {
+        "filtered_lerobot/place_object_stand_joint_v30/data/chunk-000/file-000.parquet": "bd0a91bdb2fdfa9b316907afb88f5c0a13b2aad4dc270fa225697294a653f678"
+      }
+    },
+    {
+      "task": "place_phone_stand_joint_v30",
+      "episodes": 50,
+      "frames": 6357,
+      "parquet_sha256": {
+        "filtered_lerobot/place_phone_stand_joint_v30/data/chunk-000/file-000.parquet": "75365e1d74806ae6bf378c01613cce7369eef7b2b142f35e1af31ee312fc40b3"
+      }
+    },
+    {
+      "task": "place_shoe_joint_v30",
+      "episodes": 48,
+      "frames": 8566,
+      "parquet_sha256": {
+        "filtered_lerobot/place_shoe_joint_v30/data/chunk-000/file-000.parquet": "bea510557b38f10aa65d3509a7ecd0b3328f2a17e0bc08bfeeaa588a2f2d34f7"
+      }
+    },
+    {
+      "task": "press_stapler_joint_v30",
+      "episodes": 50,
+      "frames": 5953,
+      "parquet_sha256": {
+        "filtered_lerobot/press_stapler_joint_v30/data/chunk-000/file-000.parquet": "8b61b799910d6b25066f01dba6ca4a52b75fc74205b4da825ecd43afde2ada71"
+      }
+    },
+    {
+      "task": "put_bottles_dustbin_joint_v30",
+      "episodes": 49,
+      "frames": 30407,
+      "parquet_sha256": {
+        "filtered_lerobot/put_bottles_dustbin_joint_v30/data/chunk-000/file-000.parquet": "7a1771aaa486e8701153117d93fa39d2b8c75172cbcbb9c65c06bd7c7b79caa4"
+      }
+    },
+    {
+      "task": "put_object_cabinet_joint_v30",
+      "episodes": 50,
+      "frames": 13460,
+      "parquet_sha256": {
+        "filtered_lerobot/put_object_cabinet_joint_v30/data/chunk-000/file-000.parquet": "e05843fb1b76075cfa6db70dcf80df4f3534d9fb2ba7568d6cffd5597b8146d7"
+      }
+    },
+    {
+      "task": "rotate_qrcode_joint_v30",
+      "episodes": 44,
+      "frames": 6724,
+      "parquet_sha256": {
+        "filtered_lerobot/rotate_qrcode_joint_v30/data/chunk-000/file-000.parquet": "89e951ba68b5b5b5650cdcb92fd41e0c964e4b829255996ebd2f39f7886fdc6b"
+      }
+    },
+    {
+      "task": "scan_object_joint_v30",
+      "episodes": 48,
+      "frames": 8107,
+      "parquet_sha256": {
+        "filtered_lerobot/scan_object_joint_v30/data/chunk-000/file-000.parquet": "716ab81394f9522415fadbb9feb001e9b12cae8fc445ae194f4090dc4a86082b"
+      }
+    },
+    {
+      "task": "shake_bottle_horizontally_joint_v30",
+      "episodes": 50,
+      "frames": 13911,
+      "parquet_sha256": {
+        "filtered_lerobot/shake_bottle_horizontally_joint_v30/data/chunk-000/file-000.parquet": "a736f3f62d948ebc7d8ecaa81a86f74f32e283428f0211d9d26f76c4025e9a02"
+      }
+    },
+    {
+      "task": "shake_bottle_joint_v30",
+      "episodes": 50,
+      "frames": 12436,
+      "parquet_sha256": {
+        "filtered_lerobot/shake_bottle_joint_v30/data/chunk-000/file-000.parquet": "2d2f09b6f00df00e387b9e1cb36e65b720d94aca0765bb5786858b46b6e3ff66"
+      }
+    },
+    {
+      "task": "stack_blocks_three_joint_v30",
+      "episodes": 50,
+      "frames": 23619,
+      "parquet_sha256": {
+        "filtered_lerobot/stack_blocks_three_joint_v30/data/chunk-000/file-000.parquet": "1f7dab0b9294cb58f9fbe3bcb9873ee42f132bf8a9a131ffc86120bc5b8baf30"
+      }
+    },
+    {
+      "task": "stack_blocks_two_joint_v30",
+      "episodes": 50,
+      "frames": 15647,
+      "parquet_sha256": {
+        "filtered_lerobot/stack_blocks_two_joint_v30/data/chunk-000/file-000.parquet": "8cccc470cef80e81a6037540f3e1f86849d983fc3258216d6435d2793dafafd4"
+      }
+    },
+    {
+      "task": "stack_bowls_three_joint_v30",
+      "episodes": 49,
+      "frames": 23032,
+      "parquet_sha256": {
+        "filtered_lerobot/stack_bowls_three_joint_v30/data/chunk-000/file-000.parquet": "1fb09e4664aaa1817d391575a345101e303be12a0503c35f48357695980cea1b"
+      }
+    },
+    {
+      "task": "stack_bowls_two_joint_v30",
+      "episodes": 49,
+      "frames": 15300,
+      "parquet_sha256": {
+        "filtered_lerobot/stack_bowls_two_joint_v30/data/chunk-000/file-000.parquet": "c8c23540e3bc554fcfbb76aa411cdb79714f6ad0f7e45e04bd840bfb2bcbeb40"
+      }
+    },
+    {
+      "task": "stamp_seal_joint_v30",
+      "episodes": 50,
+      "frames": 7279,
+      "parquet_sha256": {
+        "filtered_lerobot/stamp_seal_joint_v30/data/chunk-000/file-000.parquet": "7fd46bc759b146d5854a693c255cc21e58cb8a91f9ef69994749ab34e178bdcc"
+      }
+    },
+    {
+      "task": "turn_switch_joint_v30",
+      "episodes": 50,
+      "frames": 4863,
+      "parquet_sha256": {
+        "filtered_lerobot/turn_switch_joint_v30/data/chunk-000/file-000.parquet": "5c1f18aa986af96acffee20b975527ecc11844d2e20f9649d8289e1aa641b24a"
+      }
+    }
+  ]
+}
