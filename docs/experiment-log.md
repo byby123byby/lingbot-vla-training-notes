@@ -12,7 +12,7 @@
 | E05 | 已执行 | 剩余 33 条视频候选复核 | [汇总](../evidence/video33_summary.json)、[逐条决定](../evidence/video33_decisions.json) |
 | E06 | 已执行 | 122 条多臂指令角色/事件核对 | [汇总](../evidence/multi_arm_summary.json)、[4 条软问题](../evidence/multi_arm_soft_flags.json) |
 | P01 | 仅准备 | 8 卡基座全参数训练，预算段 250 步 | [原生 YAML](../configs/full_sft_8gpu_base.yaml) |
-| P02 | 仅模板 | 本队已有合规模型的 2e-5 续训 | [续训模板](../configs/full_sft_8gpu_continue.template.yaml) |
+| P02 | 仅模板 | 自己已训练的合规模型的 2e-5 续训 | [续训模板](../configs/full_sft_8gpu_continue.template.yaml) |
 | P03 | 规格已记录，未接入 | 强图像增广 | [配方](../configs/augmentation_recipe.json) |
 
 ## 当前冻结的数据选择
