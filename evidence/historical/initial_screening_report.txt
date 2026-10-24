@@ -1,0 +1,63 @@
+官方 clean 数据筛选报告（2026-10-24，北京时间）
+
+比赛要求
+训练起点：LingBot-VLA-v2-6b 基座；用 RoboTwin 2.0 Aloha-AgileX 的50个任务，每任务50条clean演示。
+禁止 randomized 数据或额外仿真轨迹进入训练。官网链接的规则解读允许按 jerk、Z-score、轨迹自身统计量过滤。
+正式评测：50任务 × clean/randomized两种设置 × 各100回合，共10000回合；需提交结果JSON、代码、权重、复现说明。
+初赛提交截止：2026-10-26 24:00；AMD平台开放到当天20:00。
+来源：https://tianchi.aliyun.com/competition/entrance/532514
+规则解读：https://tianchi.aliyun.com/forum/post/1081761
+
+完成结果
+输入2500条，549787帧；筛后2479条，544167帧。
+实验性排除21条（0.84%）；保留全部50个任务，每任务至少44条。
+33条仅jerk统计异常、未同时满足严格条件的轨迹保留并标记复查。
+未发现状态/动作非有限值、长度或索引不一致、时间戳不一致；同任务状态动作完整序列哈希未发现重复。
+逐条检查3个相机的首/中/尾帧，共22500次帧读取通过。这是抽查，不能保证每一视频帧都完好或语义正确。
+
+筛选规则
+先检查完整性，再按任务分别计算log指标的中位数和MAD。
+robust Z = 0.67448975 × (log(value)-median(log(values))) / MAD(log(values))。
+仅当动作jerk RMS、状态jerk RMS、峰值关节速度三项robust Z都>4.5，且动作jerk RMS>本任务中位数的3倍时，按运动异常排除。
+jerk使用三阶时间差分，采样率取数据元信息；排除夹爪维度，仅计算12个臂关节。
+阈值是保守的实验选择，不是官方判定标签；未证明能提升任务成功率。不得把统计异常等同于演示失败。
+没有模型打分、环境reward或额外rollout参与筛选；原始数据未被删除或改写。
+
+按任务排除数量
+hanging_mug: 1
+place_bread_skillet: 1
+place_can_basket: 5
+place_object_basket: 1
+place_shoe: 2
+put_bottles_dustbin: 1
+rotate_qrcode: 6
+scan_object: 2
+stack_bowls_three: 1
+stack_bowls_two: 1
+
+修正的读取问题
+镜像原训练清单的50个路径均指向不存在的/workspace/RoboTwin/data/lerobot/前缀。
+实际数据在/RoboTwin/data/lerobot/。本次筛选使用实际路径，新训练清单已指向筛后数据。
+
+可供训练使用的数据
+云端训练清单：/workspace/clean_screen_20261024/filtered_train_paths.txt
+云端数据目录：/workspace/clean_screen_20261024/filtered_lerobot/
+云端结果包：/workspace/clean_screen_results_20261024.tar.gz
+原始/新episode ID对应关系：episode_id_mapping.json。
+数据表和元数据已按筛后episode重新编号，并用LeRobot的aggregate_stats重新汇总统计量；视频引用原始只读文件。
+这些是LeRobot统计量，尚未重新计算LingBot统一特征空间的norm_stats；开训前需设置或计算模型归一化配置。
+已在转换环境及实际训练环境分别验证50个数据集首尾样本读取；全部544167个保留帧的动作、状态、时间戳、帧号、指令索引与原数据逐项一致。
+本地压缩包不包含大型视频，内含的视频符号链接依赖AMD Devzone挂载。在普通本机解压不代表可以直接训练。
+
+保存与实例
+本机结果包：clean_screen_results_20261024.tar.gz（约35.2MB）。
+SHA-256：be27a570f09b0347a8f086f4d3ac9fd1fc2d2752ffd0eab42fd58d84adb6faa0
+释放前平台显示本轮消耗1credit。正式长训尚未启动。
+
+复现与后续
+筛选、数据重建、验证脚本均在结果包里；data_screening_review.ipynb包含检查代码，未伪造Notebook执行记录。
+此次已经完成数据筛选和训练数据准备；下一步使用指定基座做统一50任务LoRA训练，并如实披露筛选规则。
+训练时应使用filtered_train_paths.txt，不要误用仅修复路径、但仍包含原始全部轨迹的train_paths_corrected.txt。
+
+实例已释放：平台已显示“没有正在运行的实例”，证据为instance-released.png。
+8卡训练价格已核对为8 credits/小时；长训预算待用户确定。

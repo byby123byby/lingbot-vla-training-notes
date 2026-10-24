@@ -1,0 +1,52 @@
+第二轮数据筛查（本机，2026-10-24）
+
+结论：继续保留2479条、544167帧、50任务；新增剔除0条。已完成数值与元数据复核，未完成视频语义复核。
+此次没有创建或连接云端实例，新增credits消耗为0。用户授权的32 credits训练预算尚未使用，本轮未启动训练。
+
+范围与方法
+输入是第一轮从云端保存的filtered_lerobot动作/状态Parquet和元数据；逐条检查2479条轨迹、544167帧，包括此前标记的33条。
+检查数据形状、有限值、episode长度、全局/帧索引、时间戳、指令索引与元数据文本对应关系、全序列哈希、连续停滞、关节突跳、任务内时长分布及动作/状态时序。
+数据内容哈希与第一轮审计结果逐条一致；2500条原始轨迹的已保存全序列哈希跨任务也没有重复组。
+完整性检查未发现新增错误；未发现整段完全静止轨迹；动作和状态夹爪数值均在[0,1]。
+
+值得保留的区别
+13条保留轨迹的最大单帧臂关节变化超过0.2弧度。此阈值仅用于定位复核，不是机器人的安全限值，也不是官方失败标准。
+其中place_dual_shoes的原episode 5、9、35是局部连续快速运动，不能因为速度较快就删除。
+剩余10条的峰值之前有至少两步静止，且全轨迹jerk能量超过95%集中在最高5%的时间点，优先进行视频复核。
+这10条不属于此前33条jerk待复核清单；任务内MAD在多峰分布或较多异常样本时会漏掉局部突跳。
+10条仍保留。仅凭数值无法确认跳变发生在正常复位、任务完成后动作、规划器切换还是无效演示，不能推断实际成功/失败。
+
+10条优先视频复核清单（ID都是原始episode ID，帧号从0开始）
+click_alarmclock episode 16: frame 62, joint 2, step 0.278748 rad
+click_alarmclock episode 19: frame 63, joint 9, step 0.278092 rad
+place_bread_skillet episode 13: frame 146, joint 9, step 0.208252 rad
+place_object_basket episode 44: frame 176, joint 8, step 0.209026 rad
+put_object_cabinet episode 8: frame 229, joint 2, step 0.229042 rad
+put_object_cabinet episode 15: frame 233, joint 2, step 0.243570 rad
+put_object_cabinet episode 40: frame 230, joint 2, step 0.210397 rad
+put_object_cabinet episode 42: frame 234, joint 1, step 0.341779 rad
+put_object_cabinet episode 43: frame 229, joint 2, step 0.400825 rad
+put_object_cabinet episode 48: frame 237, joint 2, step 0.242739 rad
+
+其他异常为何未直接排除
+306条含至少1秒的全维状态静止段，最长1.933秒；主要集中在少数任务。open_laptop/open_microwave/press_stapler/turn_switch各50条都出现，说明单靠停留时长会大量误筛任务的共同模式。
+88条满足任务内log时长robust |Z|>4.5；这是候选标记，不是失败标签。多峰时长分布可能源于不同动作路线，本轮不按时长删除。
+三种宽松复核标记并集为382条，并不表示382条坏数据。此前33条中11条触发至少一种标记；33条均通过本轮完整性和时序检查，仍保留。
+
+对第一轮结论的限定
+所有2479条保留轨迹都精确满足：action[t]的12个臂关节数值 = state[t+1]，对齐RMS为0（不含末帧无法对应的状态）。
+所以动作jerk与状态jerk不是独立质量证据；第一轮三项条件仍可作为启发式筛选，但不能描述成多路独立确认。
+第一轮排除的21条仍按原实验方案隔离保存；本轮未恢复或追加删除，也未证明第一轮过滤提高成功率。
+
+使用与限制
+现有云端训练清单不变：/workspace/clean_screen_20261024/filtered_train_paths.txt。
+本轮结果仅保存在本机，未上传云端；它不改变现有云端数据。
+本地没有大型视频，只有依赖云端挂载的符号链接；本轮没有新视频解码或仿真评测。上一轮22500次首/中/尾帧读取不能替代逐帧与语义检查。
+未运行模型、训练或成功率实验；没有使用环境reward筛选，没有新增仿真数据。
+若后续访问云端，先按priority_video_review.json指定的episode/帧看原始视频再决定是否调整选择；原始数据与第一版均保留。
+
+复现
+second_pass.py为实际执行的数值审计脚本，execution.log为执行输出，source_sha256.json记录输入Parquet校验值。
+review.ipynb提供同一脚本的本机复现入口，Notebook本身未执行。priority_video_review.json与continuous_motion_review.json记录进一步峰值上下文判断。
+
+classify_peaks.py可复核10条突跳候选和3条连续运动的分类，并比对已保存记录；已执行通过。
