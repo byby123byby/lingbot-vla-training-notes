@@ -1,0 +1,9 @@
+{
+  "commit": "951475ae1b1d87553e7dc47c97b53a3d695c0d13",
+  "files": {
+    "tasks/vla/train_lingbotvla.py": "0d8f627eb6ae1fe23d80fab2cb66353d2ec275298f4ee73aa106ce496da2a17e",
+    "lingbotvla/data/vla_data/transform.py": "e8f237c99ebf6cb4b16178b9bca7fba147337071f004aca8a135ac11f8ca2e49",
+    "configs/robot_configs/robotwin.yaml": "2c2a26509fc9662a8ada64adaa7fa959627dd6dadc6b48b680c4285da2d8ffd8",
+    "lingbotvla/data/vla_data/utils.py": "cfbd6e08dda8f7a3a462c50f6c230c372189f8148b3ffe6a962e240dccd86a16"
+  }
+}
